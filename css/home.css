@@ -8,8 +8,8 @@
    ========================= */
 
 .home-hero {
-    min-height: calc(100vh - var(--header-height));
-    padding: 34px 0 62px;
+    min-height: 620px;
+    padding: 18px 0 34px;
     overflow: hidden;
 }
 
@@ -25,8 +25,13 @@
     inset: 0;
     content: "";
     background:
-        linear-gradient(90deg, rgba(244, 241, 236, 0.96) 0%, rgba(244, 241, 236, 0.84) 42%, rgba(244, 241, 236, 0.54) 100%),
-        linear-gradient(180deg, rgba(244, 241, 236, 0.16), var(--color-bg) 96%);
+        linear-gradient(90deg,
+            rgba(244, 241, 236, 0.90) 0%,
+            rgba(244, 241, 236, 0.70) 42%,
+            rgba(244, 241, 236, 0.28) 100%),
+        linear-gradient(180deg,
+            rgba(244, 241, 236, 0.08),
+            rgba(244, 241, 236, 0.82) 96%);
 }
 
 .home-hero-bg img {
@@ -34,7 +39,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center right;
-    filter: saturate(0.88) contrast(0.98);
+    filter: brightness(1.08) saturate(1.04) contrast(1.02);
     transform: scale(1.03);
 }
 
@@ -64,10 +69,10 @@
 
 .home-hero-layout {
     display: grid;
-    grid-template-columns: minmax(0, 0.98fr) minmax(360px, 0.46fr);
+    grid-template-columns: minmax(0, 0.98fr) minmax(340px, 0.43fr);
     align-items: center;
-    min-height: calc(100vh - 178px);
-    gap: 44px;
+    min-height: 560px;
+    gap: 32px;
 }
 
 .home-hero-content {
@@ -75,44 +80,67 @@
 }
 
 .home-hero-content h1 {
-    margin-top: 16px;
+    max-width: 720px;
+    margin-top: 14px;
+    font-size: clamp(2.15rem, 4.2vw, 4rem);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.055em;
 }
 
 .home-hero-content>p:not(.section-kicker) {
-    max-width: 650px;
-    margin-top: 18px;
+    max-width: 610px;
+    margin-top: 14px;
     color: var(--color-text);
-    font-size: clamp(1rem, 1.35vw, 1.16rem);
-    line-height: 1.72;
+    font-size: clamp(0.96rem, 1.1vw, 1.05rem);
+    line-height: 1.62;
 }
 
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 28px;
+    gap: 10px;
+    margin-top: 22px;
 }
 
 .hero-safe-notes {
     display: flex;
     flex-wrap: wrap;
-    gap: 9px;
-    margin-top: 24px;
+    gap: 8px;
+    margin-top: 18px;
 }
 
 .hero-safe-notes span {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    min-height: 34px;
-    padding: 0 12px;
+    min-height: 32px;
+    padding: 0 11px;
     border: 1px solid rgba(221, 214, 204, 0.82);
     border-radius: var(--radius-pill);
     background: rgba(255, 255, 255, 0.58);
     color: var(--color-muted);
-    font-size: 0.78rem;
-    font-weight: 800;
+    font-size: 0.76rem;
+    font-weight: 760;
     backdrop-filter: blur(12px);
+    transition:
+        background-color var(--transition-base),
+        border-color var(--transition-base),
+        color var(--transition-base),
+        transform var(--transition-base),
+        box-shadow var(--transition-base);
+}
+
+.hero-safe-notes span:hover {
+    border-color: rgba(208, 138, 50, 0.38);
+    background: var(--color-accent-soft);
+    color: var(--color-heading);
+    box-shadow: 0 12px 28px rgba(20, 21, 23, 0.08);
+    transform: translateY(-2px);
+}
+
+.hero-safe-notes span:hover svg {
+    color: var(--color-accent-hover);
 }
 
 .hero-safe-notes svg {
@@ -129,14 +157,26 @@
 .hero-request-card {
     position: relative;
     display: grid;
-    gap: 18px;
-    padding: 18px;
+    gap: 14px;
+    padding: 15px;
     border: 1px solid rgba(221, 214, 204, 0.9);
-    border-radius: 30px;
+    border-radius: 26px;
     background:
         linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(248, 245, 239, 0.82));
-    box-shadow: 0 28px 80px rgba(20, 21, 23, 0.12);
+    box-shadow: 0 22px 60px rgba(20, 21, 23, 0.11);
     backdrop-filter: blur(18px);
+    isolation: isolate;
+    transition:
+        background-color var(--transition-base),
+        border-color var(--transition-base),
+        box-shadow var(--transition-base);
+}
+
+.hero-request-card:hover {
+    border-color: rgba(208, 138, 50, 0.36);
+    background:
+        linear-gradient(145deg, #ffffff, rgba(241, 222, 195, 0.55));
+    box-shadow: 0 26px 70px rgba(20, 21, 23, 0.14);
 }
 
 .hero-request-card::before {
@@ -152,20 +192,38 @@
 .hero-request-card-top {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 14px;
-    border-radius: 22px;
-    background: rgba(241, 222, 195, 0.54);
+    gap: 10px;
+    padding: 12px;
+    border-radius: 19px;
+    background: rgba(241, 222, 195, 0.5);
+    transition:
+        background-color var(--transition-base),
+        transform var(--transition-base);
+}
+
+.hero-request-card:hover .hero-request-card-top {
+    background: rgba(208, 138, 50, 0.16);
+    transform: translateY(-1px);
 }
 
 .hero-request-card-top>span {
     display: grid;
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     place-items: center;
-    border-radius: 15px;
+    border-radius: 14px;
     background: var(--color-dark);
     color: var(--color-accent);
+    transition:
+        background-color var(--transition-base),
+        color var(--transition-base),
+        transform var(--transition-base);
+}
+
+.hero-request-card:hover .hero-request-card-top>span {
+    background: var(--color-accent);
+    color: #fff;
+    transform: rotate(-3deg);
 }
 
 .hero-request-card-top svg {
@@ -196,12 +254,32 @@
     gap: 14px;
 }
 
+
+.hero-request-card .form-field input,
+.hero-request-card .form-field select {
+    min-height: 44px;
+    border-radius: 13px;
+}
+
+.hero-request-card .form-field span {
+    font-size: 0.74rem;
+}
+
+.hero-request-card .form-check {
+    font-size: 0.74rem;
+    line-height: 1.4;
+}
+
+.hero-request-card .btn {
+    min-height: 44px;
+}
+
 /* =========================
    INTRO STRIP
    ========================= */
 
 .home-intro-strip {
-    margin-top: -30px;
+    margin-top: -90px;
 }
 
 .intro-strip-inner {
@@ -716,14 +794,14 @@
 
 @media (max-width: 1120px) {
     .home-hero {
-        min-height: auto;
-        padding-top: 42px;
-    }
+            min-height: auto;
+            padding: calc(var(--header-height) + 28px) 0 48px;
+        }
 
-    .home-hero-layout {
-        grid-template-columns: 1fr;
-        min-height: auto;
-    }
+        .home-hero-layout {
+            grid-template-columns: 1fr;
+            min-height: auto;
+        }
 
     .hero-request-card {
         max-width: 620px;
@@ -771,19 +849,30 @@
 }
 
 @media (max-width: 760px) {
-    .home-hero {
-        padding: 26px 0 54px;
+.home-hero {
+        padding: calc(var(--header-height) + 20px) 0 42px;
     }
 
     .home-hero-bg::after {
         background:
-            linear-gradient(180deg, rgba(244, 241, 236, 0.94), rgba(244, 241, 236, 0.86)),
-            linear-gradient(180deg, rgba(244, 241, 236, 0.16), var(--color-bg) 96%);
+            linear-gradient(180deg,
+                rgba(244, 241, 236, 0.88),
+                rgba(244, 241, 236, 0.72)),
+            linear-gradient(180deg,
+                rgba(244, 241, 236, 0.08),
+                rgba(244, 241, 236, 0.84) 96%);
+    }
+
+    .home-hero-content h1 {
+        font-size: clamp(2rem, 10vw, 3rem);
+        font-weight: 500;
     }
 
     .home-hero-layout {
-        gap: 24px;
+        gap: 18px;
     }
+
+
 
     .hero-actions {
         display: grid;
@@ -798,7 +887,7 @@
     }
 
     .hero-request-card {
-        padding: 14px;
+        padding: 13px;
         border-radius: 24px;
     }
 
@@ -937,5 +1026,52 @@
 
     .comfort-media img {
         min-height: 310px;
+    }
+}
+
+/* =========================
+   HERO TOP SPACE FIX
+   Tablet / Mobile
+   ========================= */
+
+@media (max-width: 1120px) {
+    .home-hero {
+        min-height: auto;
+        padding: 0 0 48px !important;
+    }
+
+    .home-hero>.container-wide {
+        padding-top: 50px !important;
+    }
+
+    .home-hero-layout {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        gap: 24px;
+        align-items: start;
+    }
+
+    .hero-request-card {
+        max-width: 620px;
+    }
+}
+
+@media (max-width: 760px) {
+    .home-hero {
+        padding: 0 0 42px !important;
+    }
+
+    .home-hero>.container-wide {
+        padding-top: 64px !important;
+    }
+
+    .home-hero-layout {
+        gap: 18px;
+    }
+}
+
+@media (max-width: 440px) {
+    .home-hero>.container-wide {
+        padding-top: 40px !important;
     }
 }
