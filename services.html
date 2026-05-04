@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC Service Categories | Climora</title>
+    <meta name="description"
+        content="Explore HVAC service categories and compare independent local provider options through Climora.">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-page="services">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- =========================
+         SITE HEADER
+         ========================= -->
+    <header class="site-header" data-site-header>
+        <div class="container-wide">
+            <div class="header-inner">
+                <a href="index.html" class="site-logo" aria-label="Climora home" data-logo-label>
+                    <span class="site-logo-mark" aria-hidden="true">
+                        <svg class="logo-svg" viewBox="0 0 64 64" role="img">
+                            <path class="logo-frame"
+                                d="M12 18C12 13.6 15.6 10 20 10H44C48.4 10 52 13.6 52 18V46C52 50.4 48.4 54 44 54H20C15.6 54 12 50.4 12 46V18Z">
+                            </path>
+                            <path class="logo-grille" d="M21 22H43"></path>
+                            <path class="logo-grille" d="M21 30H43"></path>
+                            <path class="logo-grille" d="M21 38H34"></path>
+                            <path class="logo-air" d="M36 39C40.8 39 43.8 36.8 45 33.5"></path>
+                            <path class="logo-air" d="M34 46C42.2 46 48.2 41.8 50.5 35"></path>
+                        </svg>
+                    </span>
+
+                    <span class="site-logo-text">
+                        <strong data-company-name>Climora</strong>
+                        <small data-logo-subtitle>HVAC matching</small>
+                    </span>
+                </a>
+
+                <nav class="desktop-nav" aria-label="Primary navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+
+                        <li class="nav-dropdown">
+                            <a href="services.html" aria-current="page">
+                                Services
+                                <i data-lucide="chevron-down" aria-hidden="true"></i>
+                            </a>
+
+                            <div class="nav-dropdown-panel" aria-label="Service pages">
+                                <a href="hvac-installation.html">
+                                    <i data-lucide="panel-top" aria-hidden="true"></i>
+                                    <span>HVAC Installation</span>
+                                </a>
+
+                                <a href="hvac-repair.html">
+                                    <i data-lucide="wrench" aria-hidden="true"></i>
+                                    <span>HVAC Repair</span>
+                                </a>
+
+                                <a href="ac-services.html">
+                                    <i data-lucide="snowflake" aria-hidden="true"></i>
+                                    <span>AC Services</span>
+                                </a>
+
+                                <a href="heating-services.html">
+                                    <i data-lucide="flame" aria-hidden="true"></i>
+                                    <span>Heating Services</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="tel:+18886243178" class="header-phone" data-phone-href>
+                        <i data-lucide="phone" aria-hidden="true"></i>
+                        <span data-phone-label>Compare HVAC Options</span>
+                    </a>
+
+                    <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                        aria-controls="mobile-menu" data-menu-toggle>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================
+         MOBILE FIXED PHONE CTA
+         ========================= -->
+    <a href="tel:+18886243178" class="mobile-phone-cta" data-phone-href>
+        <i data-lucide="phone" aria-hidden="true"></i>
+        <span data-phone-label>Compare HVAC Options</span>
+    </a>
+
+    <!-- =========================
+         MOBILE MENU
+         ========================= -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
+        <div class="mobile-menu-backdrop" data-menu-close></div>
+
+        <div class="mobile-menu-panel" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+            <div class="mobile-menu-head">
+                <a href="index.html" class="site-logo" aria-label="Climora home">
+                    <span class="site-logo-mark" aria-hidden="true">
+                        <svg class="logo-svg" viewBox="0 0 64 64" role="img">
+                            <path class="logo-frame"
+                                d="M12 18C12 13.6 15.6 10 20 10H44C48.4 10 52 13.6 52 18V46C52 50.4 48.4 54 44 54H20C15.6 54 12 50.4 12 46V18Z">
+                            </path>
+                            <path class="logo-grille" d="M21 22H43"></path>
+                            <path class="logo-grille" d="M21 30H43"></path>
+                            <path class="logo-grille" d="M21 38H34"></path>
+                            <path class="logo-air" d="M36 39C40.8 39 43.8 36.8 45 33.5"></path>
+                            <path class="logo-air" d="M34 46C42.2 46 48.2 41.8 50.5 35"></path>
+                        </svg>
+                    </span>
+
+                    <span class="site-logo-text">
+                        <strong data-company-name>Climora</strong>
+                        <small data-logo-subtitle>HVAC matching</small>
+                    </span>
+                </a>
+
+                <button class="mobile-menu-close" type="button" aria-label="Close menu" data-menu-close>
+                    <i data-lucide="x" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="mobile-menu-body">
+                <nav class="mobile-nav" aria-label="Mobile primary navigation">
+                    <a href="index.html">Home</a>
+                    <a href="services.html" aria-current="page">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+                <div class="mobile-service-links" aria-label="HVAC service pages">
+                    <p>Service categories</p>
+
+                    <a href="hvac-installation.html">
+                        <i data-lucide="panel-top" aria-hidden="true"></i>
+                        <span>HVAC Installation</span>
+                    </a>
+
+                    <a href="hvac-repair.html">
+                        <i data-lucide="wrench" aria-hidden="true"></i>
+                        <span>HVAC Repair</span>
+                    </a>
+
+                    <a href="ac-services.html">
+                        <i data-lucide="snowflake" aria-hidden="true"></i>
+                        <span>AC Services</span>
+                    </a>
+
+                    <a href="heating-services.html">
+                        <i data-lucide="flame" aria-hidden="true"></i>
+                        <span>Heating Services</span>
+                    </a>
+                </div>
+
+                <div class="mobile-contact-card">
+                    <p>Contact</p>
+
+                    <a href="tel:+18886243178" data-phone-href>
+                        <i data-lucide="phone" aria-hidden="true"></i>
+                        <span data-phone>+1 888 624 3178</span>
+                    </a>
+
+                    <a href="mailto:hello@climoramatch.com" data-email-href>
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                        <span data-email>hello@climoramatch.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================
+         MAIN CONTENT
+         ========================= -->
+    <main id="main-content">
+        <!-- =========================
+             SERVICES HERO
+             ========================= -->
+        <section class="services-hero section">
+            <div class="container-wide">
+                <div class="services-hero-grid">
+                    <div class="services-hero-copy" data-aos="fade-right">
+                        <p class="section-kicker">
+                            <i data-lucide="layers-3" aria-hidden="true"></i>
+                            HVAC service categories
+                        </p>
+
+                        <h1>Compare HVAC provider options by request type, not guesswork.</h1>
+
+                        <p>
+                            Climora helps homeowners organize heating and cooling requests before comparing independent
+                            local provider options. Choose the category that best matches your home comfort concern.
+                        </p>
+
+                        <div class="services-hero-actions">
+                            <a href="contact.html" class="btn btn-primary">
+                                Start Matching Request
+                                <i data-lucide="arrow-right" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#service-categories" class="btn btn-secondary">
+                                Browse Categories
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="services-hero-visual" data-aos="fade-left">
+                        <img src="./assets/images/services/services-hero-hvac.jpg"
+                            alt="Modern HVAC vent detail in a calm beige interior">
+
+                        <div class="services-hero-card">
+                            <i data-lucide="air-vent" aria-hidden="true"></i>
+                            <div>
+                                <span>Platform reminder</span>
+                                <strong>Climora does not perform HVAC services directly.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             SERVICE CATEGORIES
+             ========================= -->
+        <section class="section services-catalog" id="service-categories">
+            <div class="container-wide">
+                <div class="section-heading section-heading-split">
+                    <div data-aos="fade-right">
+                        <p class="section-kicker">
+                            <i data-lucide="square-stack" aria-hidden="true"></i>
+                            Choose a category
+                        </p>
+
+                        <h2>Four focused HVAC paths for common homeowner requests.</h2>
+                    </div>
+
+                    <p data-aos="fade-left">
+                        Each service page explains what homeowners may compare, what details can affect provider fit,
+                        and why license and insurance verification still matters.
+                    </p>
+                </div>
+
+                <div class="services-catalog-grid">
+                    <a href="hvac-installation.html" class="catalog-service-card catalog-service-card-large"
+                        data-aos="fade-up">
+                        <img src="./assets/images/services/hvac-installation.jpg"
+                            alt="HVAC installation planning in a modern home utility area">
+
+                        <span class="catalog-service-icon">
+                            <i data-lucide="panel-top" aria-hidden="true"></i>
+                        </span>
+
+                        <span class="catalog-service-content">
+                            <small>System planning</small>
+                            <strong>HVAC Installation</strong>
+                            <em>
+                                Compare provider options for new systems, replacement planning, system sizing
+                                conversations, and indoor comfort upgrades.
+                            </em>
+                            <span class="catalog-link-text">
+                                View installation page
+                                <i data-lucide="arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </a>
+
+                    <a href="hvac-repair.html" class="catalog-service-card" data-aos="fade-up" data-aos-delay="80">
+                        <img src="./assets/images/services/hvac-repair.jpg" alt="Clean HVAC equipment detail">
+
+                        <span class="catalog-service-icon">
+                            <i data-lucide="wrench" aria-hidden="true"></i>
+                        </span>
+
+                        <span class="catalog-service-content">
+                            <small>Comfort issue</small>
+                            <strong>HVAC Repair</strong>
+                            <em>
+                                Request matching for airflow, thermostat, unusual sound, or system performance concerns.
+                            </em>
+                            <span class="catalog-link-text">
+                                View repair page
+                                <i data-lucide="arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </a>
+
+                    <a href="ac-services.html" class="catalog-service-card" data-aos="fade-up" data-aos-delay="160">
+                        <img src="./assets/images/services/ac-services.jpg"
+                            alt="Air conditioning vent in a bright modern room">
+
+                        <span class="catalog-service-icon">
+                            <i data-lucide="snowflake" aria-hidden="true"></i>
+                        </span>
+
+                        <span class="catalog-service-content">
+                            <small>Cooling comfort</small>
+                            <strong>AC Services</strong>
+                            <em>
+                                Compare provider options for cooling concerns, seasonal AC service, and system checks.
+                            </em>
+                            <span class="catalog-link-text">
+                                View AC page
+                                <i data-lucide="arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </a>
+
+                    <a href="heating-services.html" class="catalog-service-card catalog-service-card-wide"
+                        data-aos="fade-up" data-aos-delay="240">
+                        <img src="./assets/images/services/heating-services.jpg"
+                            alt="Warm modern interior showing heating comfort">
+
+                        <span class="catalog-service-icon">
+                            <i data-lucide="flame" aria-hidden="true"></i>
+                        </span>
+
+                        <span class="catalog-service-content">
+                            <small>Warmth planning</small>
+                            <strong>Heating Services</strong>
+                            <em>
+                                Explore provider options for furnace, heat pump, heating performance, seasonal service,
+                                or replacement planning.
+                            </em>
+                            <span class="catalog-link-text">
+                                View heating page
+                                <i data-lucide="arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             COMPARISON DETAILS
+             ========================= -->
+        <section class="section services-compare">
+            <div class="container-wide">
+                <div class="services-compare-panel">
+                    <div class="services-compare-copy" data-aos="fade-right">
+                        <p class="section-kicker">
+                            <i data-lucide="list-checks" aria-hidden="true"></i>
+                            What to compare
+                        </p>
+
+                        <h2>Provider comparison should stay clear, practical, and homeowner-controlled.</h2>
+
+                        <p>
+                            Climora helps homeowners begin with structured request details. After that, independent
+                            providers may communicate their own availability, quote process, scheduling options,
+                            and service terms.
+                        </p>
+                    </div>
+
+                    <div class="compare-table" data-aos="fade-left" aria-label="HVAC provider comparison factors">
+                        <div class="compare-row compare-row-head">
+                            <span>Factor</span>
+                            <span>Why it matters</span>
+                        </div>
+
+                        <div class="compare-row">
+                            <span>Location</span>
+                            <span>Provider availability may vary by ZIP code, route, and service area.</span>
+                        </div>
+
+                        <div class="compare-row">
+                            <span>System type</span>
+                            <span>AC, furnace, heat pump, ductwork, and thermostat requests can require different
+                                provider fit.</span>
+                        </div>
+
+                        <div class="compare-row">
+                            <span>Timing</span>
+                            <span>Seasonal demand may affect response windows and scheduling options.</span>
+                        </div>
+
+                        <div class="compare-row">
+                            <span>Scope clarity</span>
+                            <span>Written quote details help homeowners compare what is included before choosing.</span>
+                        </div>
+
+                        <div class="compare-row">
+                            <span>Credentials</span>
+                            <span>Homeowners should verify licenses, insurance, qualifications, and written
+                                terms.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             REQUEST PATH
+             ========================= -->
+        <section class="section service-path-section">
+            <div class="container">
+                <div class="section-heading text-center" data-aos="fade-up">
+                    <p class="section-kicker section-kicker-center">
+                        <i data-lucide="route" aria-hidden="true"></i>
+                        Matching flow
+                    </p>
+
+                    <h2>Start simple, then compare with more confidence.</h2>
+
+                    <p>
+                        The first step should not feel like a technical inspection. It should help homeowners describe
+                        the request clearly enough to begin comparing independent provider options.
+                    </p>
+                </div>
+
+                <div class="service-path-grid">
+                    <article data-aos="fade-up">
+                        <span>01</span>
+                        <i data-lucide="mouse-pointer-click" aria-hidden="true"></i>
+                        <h3>Select a service category</h3>
+                        <p>Choose installation, repair, AC service, or heating service.</p>
+                    </article>
+
+                    <article data-aos="fade-up" data-aos-delay="90">
+                        <span>02</span>
+                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                        <h3>Add location context</h3>
+                        <p>ZIP code and home details help shape the matching request.</p>
+                    </article>
+
+                    <article data-aos="fade-up" data-aos-delay="180">
+                        <span>03</span>
+                        <i data-lucide="clipboard-check" aria-hidden="true"></i>
+                        <h3>Review provider options</h3>
+                        <p>Compare timing, communication, quote detail, and provider fit.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             FAQ
+             ========================= -->
+        <section class="section faq-section services-faq">
+            <div class="container">
+                <div class="section-heading text-center" data-aos="fade-up">
+                    <p class="section-kicker section-kicker-center">
+                        <i data-lucide="circle-help" aria-hidden="true"></i>
+                        Services FAQ
+                    </p>
+
+                    <h2>Questions homeowners often ask before choosing a category.</h2>
+                </div>
+
+                <div class="faq-list" data-faq-list>
+                    <article class="faq-item" data-faq-item data-aos="fade-up">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Which HVAC category should I choose?</span>
+                            <i data-lucide="plus" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Choose the category closest to your current need. If the system is not working as
+                                expected, HVAC Repair may fit. If you are planning a new or replacement system,
+                                HVAC Installation may be better.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-faq-item data-aos="fade-up">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Does Climora send its own HVAC technicians?</span>
+                            <i data-lucide="plus" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                No. Climora is an independent matching platform. It does not perform HVAC services
+                                directly and does not send its own technicians.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-faq-item data-aos="fade-up">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Can provider availability change by season?</span>
+                            <i data-lucide="plus" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Yes. Heating and cooling demand can change by season, weather, ZIP code, provider
+                                schedule, and service category.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-faq-item data-aos="fade-up">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>What should I verify before hiring a provider?</span>
+                            <i data-lucide="plus" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Homeowners should verify licenses, insurance, qualifications, written scope, quote
+                                terms, warranty details, and any required permits before hiring.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             FINAL CTA
+             ========================= -->
+        <section class="section services-final">
+            <div class="container-wide">
+                <div class="services-final-panel" data-aos="fade-up">
+                    <div>
+                        <p class="section-kicker">
+                            <i data-lucide="send" aria-hidden="true"></i>
+                            Ready to begin
+                        </p>
+
+                        <h2>Start with your HVAC category and compare provider options from there.</h2>
+
+                        <p>
+                            Climora helps organize the request, but homeowners remain responsible for reviewing
+                            provider credentials, written terms, and hiring decisions.
+                        </p>
+                    </div>
+
+                    <a href="contact.html" class="btn btn-primary">
+                        Start Matching Request
+                        <i data-lucide="arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <footer class="site-footer">
+        <div class="container-wide">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo footer-logo" aria-label="Climora home">
+                        <span class="site-logo-mark" aria-hidden="true">
+                            <svg class="logo-svg" viewBox="0 0 64 64" role="img">
+                                <path class="logo-frame"
+                                    d="M12 18C12 13.6 15.6 10 20 10H44C48.4 10 52 13.6 52 18V46C52 50.4 48.4 54 44 54H20C15.6 54 12 50.4 12 46V18Z">
+                                </path>
+                                <path class="logo-grille" d="M21 22H43"></path>
+                                <path class="logo-grille" d="M21 30H43"></path>
+                                <path class="logo-grille" d="M21 38H34"></path>
+                                <path class="logo-air" d="M36 39C40.8 39 43.8 36.8 45 33.5"></path>
+                                <path class="logo-air" d="M34 46C42.2 46 48.2 41.8 50.5 35"></path>
+                            </svg>
+                        </span>
+
+                        <span class="site-logo-text">
+                            <strong data-company-name>Climora</strong>
+                            <small data-logo-subtitle>HVAC matching</small>
+                        </span>
+                    </a>
+
+                    <p data-footer-text>
+                        Climora is an independent HVAC provider matching platform that helps homeowners compare
+                        local provider options for heating, cooling, system replacement, repair requests,
+                        and indoor comfort projects.
+                    </p>
+
+                    <div class="footer-contact">
+                        <a href="tel:+18886243178" data-phone-href>
+                            <i data-lucide="phone" aria-hidden="true"></i>
+                            <span data-phone>+1 888 624 3178</span>
+                        </a>
+
+                        <a href="mailto:hello@climoramatch.com" data-email-href>
+                            <i data-lucide="mail" aria-hidden="true"></i>
+                            <span data-email>hello@climoramatch.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer-column" aria-label="Footer navigation">
+                    <h2>Pages</h2>
+                    <a href="index.html">Home</a>
+                    <a href="services.html" aria-current="page">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+                <nav class="footer-column" aria-label="Footer service navigation">
+                    <h2>Services</h2>
+                    <a href="hvac-installation.html">HVAC Installation</a>
+                    <a href="hvac-repair.html">HVAC Repair</a>
+                    <a href="ac-services.html">AC Services</a>
+                    <a href="heating-services.html">Heating Services</a>
+                </nav>
+
+                <nav class="footer-column" aria-label="Legal navigation">
+                    <h2>Legal</h2>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </nav>
+            </div>
+
+            <div class="footer-legal">
+                <p>
+                    <strong data-company-name>Climora</strong>
+                    <span data-company-id>CLM-HVAC-8392</span>
+                    <span data-address>515 Congress Avenue, Austin, TX 78701, USA</span>
+                </p>
+
+                <p data-service-area>
+                    Independent HVAC provider matching across the United States
+                </p>
+
+                <p data-legal-notice>
+                    Climora does not perform HVAC installation, repair, replacement, maintenance, or heating and
+                    cooling services directly. Provider availability, response times, pricing, qualifications,
+                    licenses, and insurance may vary by location and by independent provider.
+                </p>
+
+                <p data-disclaimer>
+                    Disclaimer: This site is a free service to assist homeowners in connecting with local service
+                    providers.
+                    All contractors/providers are independent and this site does not warrant or guarantee any work
+                    performed.
+                    It is the responsibility of the homeowner to verify that the hired contractor furnishes the
+                    necessary
+                    license and insurance required for the work being performed. All persons depicted in a photo or
+                    video
+                    are actors or models and not contractors listed on this site.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================
+         COOKIE / POLICY BANNER
+         ========================= -->
+    <div class="policy-banner" data-policy-banner aria-live="polite">
+        <div class="policy-banner-inner">
+            <div>
+                <h2>Privacy preferences</h2>
+                <p>
+                    Climora uses cookies and similar technologies to support site functionality, understand basic usage,
+                    and improve the request experience. Please review the policy links before choosing an option.
+                </p>
+
+                <div class="policy-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+
+            <div class="policy-actions">
+                <button type="button" class="btn btn-secondary" data-policy-decline>Decline</button>
+                <button type="button" class="btn btn-primary" data-policy-accept>Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/services.js"></script>
+</body>
+
+</html>

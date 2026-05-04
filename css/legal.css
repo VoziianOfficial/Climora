@@ -1,0 +1,313 @@
+/* ==========================================================
+   CLIMORA — LEGAL PAGES
+   File: /css/legal.css
+   ========================================================== */
+
+/* =========================
+   LEGAL HERO
+   ========================= */
+
+.legal-hero {
+    padding-top: 54px;
+    overflow: hidden;
+}
+
+.legal-hero-content {
+    max-width: 860px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.legal-hero-content h1 {
+    margin-top: 16px;
+    margin-inline: auto;
+}
+
+.legal-hero-content>p:not(.section-kicker) {
+    max-width: 700px;
+    margin: 18px auto 0;
+    color: var(--color-muted);
+    font-size: 1.04rem;
+    line-height: 1.72;
+}
+
+.legal-updated {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 38px;
+    margin-top: 22px;
+    padding: 0 14px;
+    border: 1px solid rgba(221, 214, 204, 0.88);
+    border-radius: var(--radius-pill);
+    background: rgba(255, 255, 255, 0.64);
+    color: var(--color-muted);
+    font-size: 0.82rem;
+    font-weight: 800;
+    box-shadow: 0 12px 30px rgba(20, 21, 23, 0.045);
+}
+
+.legal-updated svg {
+    width: 15px;
+    height: 15px;
+    color: var(--color-accent);
+}
+
+/* =========================
+   LEGAL LAYOUT
+   ========================= */
+
+.legal-content-section {
+    padding-bottom: 82px;
+    overflow: visible;
+}
+
+.legal-layout {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    align-items: start;
+    gap: 20px;
+}
+
+.legal-sidebar {
+    position: sticky;
+    top: 108px;
+}
+
+.legal-sidebar nav {
+    display: grid;
+    gap: 6px;
+    padding: 12px;
+    border: 1px solid rgba(221, 214, 204, 0.9);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.66);
+    box-shadow: 0 14px 34px rgba(20, 21, 23, 0.055);
+    backdrop-filter: blur(16px);
+}
+
+.legal-sidebar a {
+    display: flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 0 12px;
+    border-radius: 14px;
+    color: var(--color-muted);
+    font-size: 0.86rem;
+    font-weight: 800;
+    transition:
+        background-color var(--transition-base),
+        color var(--transition-base),
+        transform var(--transition-base);
+}
+
+.legal-sidebar a:hover,
+.legal-sidebar a.is-active {
+    background: var(--color-accent-soft);
+    color: var(--color-heading);
+    transform: translateX(2px);
+}
+
+/* =========================
+   LEGAL CARD
+   ========================= */
+
+.legal-card {
+    padding: 34px;
+    border: 1px solid rgba(221, 214, 204, 0.9);
+    border-radius: 34px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(208, 138, 50, 0.08), transparent 30%),
+        rgba(255, 255, 255, 0.76);
+    box-shadow: var(--shadow-soft);
+}
+
+.legal-card section {
+    scroll-margin-top: 120px;
+}
+
+.legal-card section+section {
+    margin-top: 34px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(221, 214, 204, 0.82);
+}
+
+.legal-card h2 {
+    margin-bottom: 12px;
+    font-size: clamp(1.25rem, 2vw, 1.72rem);
+    letter-spacing: -0.04em;
+}
+
+.legal-card p {
+    color: var(--color-muted);
+    line-height: 1.75;
+}
+
+.legal-card p+p {
+    margin-top: 12px;
+}
+
+.legal-card ul {
+    display: grid;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.legal-card li {
+    position: relative;
+    padding-left: 22px;
+    color: var(--color-muted);
+    line-height: 1.65;
+}
+
+.legal-card li::before {
+    position: absolute;
+    top: 0.72em;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    content: "";
+}
+
+.legal-card strong {
+    color: var(--color-heading);
+}
+
+.legal-card a {
+    color: var(--color-accent-hover);
+    font-weight: 850;
+    text-decoration: underline;
+    text-decoration-color: rgba(208, 138, 50, 0.38);
+    text-underline-offset: 4px;
+    transition: color var(--transition-base);
+}
+
+.legal-card a:hover {
+    color: var(--color-heading);
+}
+
+/* =========================
+   LEGAL CONTACT BOX
+   ========================= */
+
+.legal-contact-box {
+    display: grid;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 18px;
+    border: 1px solid rgba(221, 214, 204, 0.9);
+    border-radius: 22px;
+    background: rgba(244, 241, 236, 0.72);
+}
+
+.legal-contact-box p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 0.92rem;
+}
+
+.legal-contact-box strong {
+    color: var(--color-heading);
+    font-family: var(--font-heading);
+    font-size: 1.02rem;
+    letter-spacing: -0.035em;
+}
+
+/* =========================
+   DISCLAIMER BOX
+   ========================= */
+
+.legal-disclaimer-box {
+    padding: 22px !important;
+    border: 1px solid rgba(208, 138, 50, 0.24) !important;
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(208, 138, 50, 0.12), transparent 34%),
+        rgba(241, 222, 195, 0.32);
+}
+
+.legal-disclaimer-box h2 {
+    margin-bottom: 10px;
+}
+
+.legal-disclaimer-box p {
+    color: var(--color-text);
+    font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 980px) {
+    .legal-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .legal-sidebar {
+        position: static;
+    }
+
+    .legal-sidebar nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .legal-hero {
+        padding-top: 34px;
+    }
+
+    .legal-hero-content>p:not(.section-kicker) {
+        font-size: 0.96rem;
+    }
+
+    .legal-content-section {
+        padding-bottom: 58px;
+    }
+
+    .legal-card {
+        padding: 20px;
+        border-radius: 26px;
+    }
+
+    .legal-card section+section {
+        margin-top: 26px;
+        padding-top: 24px;
+    }
+
+    .legal-sidebar nav {
+        grid-template-columns: 1fr;
+        border-radius: 22px;
+    }
+
+    .legal-sidebar a {
+        min-height: 40px;
+    }
+
+    .legal-contact-box {
+        padding: 15px;
+        border-radius: 18px;
+    }
+
+    .legal-disclaimer-box {
+        padding: 18px !important;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .legal-updated {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .legal-card {
+        padding: 18px;
+    }
+
+    .legal-card li {
+        padding-left: 18px;
+    }
+}
