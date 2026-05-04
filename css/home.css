@@ -435,9 +435,10 @@
     right: 18px;
     bottom: 18px;
     left: 18px;
-    display: grid;
-    gap: 8px;
-    min-height: 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 158px;
     padding: 18px;
     border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 22px;
@@ -446,30 +447,39 @@
 }
 
 .service-photo-overlay small {
+    display: inline-flex;
+    align-items: center;
     width: fit-content;
+    min-height: 22px;
     color: rgba(255, 255, 255, 0.68);
-    font-size: 0.73rem;
+    font-size: 0.72rem;
     font-style: normal;
     font-weight: 850;
     letter-spacing: 0.07em;
+    line-height: 1;
     text-transform: uppercase;
 }
 
 .service-photo-overlay strong {
+    display: block;
+    margin-top: 10px;
     color: #fff;
     font-family: var(--font-heading);
-    font-size: 1.25rem;
-    font-weight: 650;
+    font-size: 1.16rem;
+    font-weight: 620;
     letter-spacing: -0.04em;
-    line-height: 1.15;
+    line-height: 1.16;
 }
 
 .service-photo-overlay em {
+    display: block;
+    margin-top: auto;
+    padding-top: 14px;
     color: rgba(255, 255, 255, 0.76);
-    font-size: 0.84rem;
+    font-size: 0.82rem;
     font-style: normal;
     font-weight: 550;
-    line-height: 1.5;
+    line-height: 1.45;
 }
 
 /* =========================
@@ -919,11 +929,21 @@
         border-radius: 24px;
     }
 
-    .service-photo-overlay {
-        min-height: auto;
-        padding: 16px;
-        border-radius: 19px;
-    }
+ .service-photo-overlay {
+     min-height: 145px;
+     padding: 16px;
+     border-radius: 19px;
+ }
+
+ .service-photo-overlay strong {
+     margin-top: 8px;
+     font-size: 1.08rem;
+ }
+
+ .service-photo-overlay em {
+     padding-top: 12px;
+     font-size: 0.8rem;
+ }
 
     .model-panel {
         gap: 22px;
