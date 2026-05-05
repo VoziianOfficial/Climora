@@ -73,14 +73,14 @@ html {
     width: 100%;
     min-width: 320px;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
     width: 100%;
     min-width: 320px;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: clip;
     background:
         radial-gradient(circle at 12% 0%, rgba(208, 138, 50, 0.08), transparent 32%),
         linear-gradient(180deg, #F8F5EF 0%, var(--color-bg) 42%, #EFE9DF 100%);
@@ -512,7 +512,9 @@ p {
 .site-header {
     position: sticky;
     top: 0;
-    z-index: 800;
+    left: 0;
+    right: 0;
+    z-index: 999;
     width: 100%;
     padding: 14px 0;
     background: rgba(244, 241, 236, 0.82);
