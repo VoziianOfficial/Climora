@@ -1,19 +1,13 @@
 "use strict";
 
-/* ==========================================================
-   CLIMORA — GLOBAL CONFIG
-   File: /js/config.js
-
-   Edit this file to update global company data,
-   contact details, legal text, navigation, service content,
-   page meta, and repeated site values.
-   ========================================================== */
 
 const companyName = "Climora";
+const previousCompanyName = "Climora";
 
 window.SITE_CONFIG = {
     companyName,
     companyId: "CLM-HVAC-8392",
+    previousCompanyName,
 
     brand: {
         shortName: companyName,

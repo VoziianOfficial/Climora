@@ -1,21 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   CLIMORA — MAIN GLOBAL SCRIPT
-   File: /js/main.js
 
-   Handles:
-   - config injection
-   - title/meta from config
-   - sticky header
-   - mobile menu
-   - FAQ accordion
-   - policy banner
-   - Lucide icons
-   - AOS animations
-   - global mini request forms
-   - FAQ JSON-LD schema
-   ========================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
     const config = window.SITE_CONFIG;
@@ -118,6 +103,12 @@ function injectConfigValues(config) {
     });
 
     replaceCompanyTokens(companyName);
+    replaceHardcodedCompanyName(config);
+
+    setTimeout(() => {
+        replaceCompanyTokens(companyName);
+        replaceHardcodedCompanyName(config);
+    }, 0);
 }
 
 function setText(selector, value) {
@@ -140,7 +131,20 @@ function replaceCompanyTokens(companyName) {
     const tokenElements = document.querySelectorAll("[data-company-token]");
 
     tokenElements.forEach((element) => {
-        element.textContent = element.textContent.replaceAll("{{companyName}}", companyName);
+        replaceTextNodeTokens(element, "{{companyName}}", companyName);
+    });
+}
+
+function replaceTextNodeTokens(element, token, value) {
+    element.childNodes.forEach((node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+            node.textContent = node.textContent.replaceAll(token, value);
+            return;
+        }
+
+        if (node.nodeType === Node.ELEMENT_NODE) {
+            replaceTextNodeTokens(node, token, value);
+        }
     });
 }
 
@@ -467,4 +471,60 @@ function initLibraries() {
             offset: 70
         });
     }
+}
+
+function replaceHardcodedCompanyName(config) {
+    const oldName = config.previousCompanyName || "Climora";
+    const newName = config.companyName;
+
+    if (!oldName || !newName || oldName === newName) return;
+
+    const ignoredTags = new Set([
+        "SCRIPT",
+        "STYLE",
+        "NOSCRIPT",
+        "IFRAME"
+    ]);
+
+    const walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        {
+            acceptNode(node) {
+                const parent = node.parentElement;
+
+                if (!parent || ignoredTags.has(parent.tagName)) {
+                    return NodeFilter.FILTER_REJECT;
+                }
+
+                if (!node.textContent.includes(oldName)) {
+                    return NodeFilter.FILTER_REJECT;
+                }
+
+                return NodeFilter.FILTER_ACCEPT;
+            }
+        }
+    );
+
+    const textNodes = [];
+
+    while (walker.nextNode()) {
+        textNodes.push(walker.currentNode);
+    }
+
+    textNodes.forEach((node) => {
+        node.textContent = node.textContent.replaceAll(oldName, newName);
+    });
+
+    document
+        .querySelectorAll("[aria-label], [title], [alt], [placeholder]")
+        .forEach((element) => {
+            ["aria-label", "title", "alt", "placeholder"].forEach((attr) => {
+                const value = element.getAttribute(attr);
+
+                if (value && value.includes(oldName)) {
+                    element.setAttribute(attr, value.replaceAll(oldName, newName));
+                }
+            });
+        });
 }
