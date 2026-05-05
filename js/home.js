@@ -1,15 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   CLIMORA — HOME PAGE SCRIPT
-   File: /js/home.js
 
-   Handles:
-   - subtle hero image parallax
-   - request card hover tilt
-   - comfort image soft motion
-   - home-only micro interactions
-   ========================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
     initHomeHeroParallax();
@@ -17,9 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initHomeComfortMotion();
 });
 
-/* =========================
-   HERO PARALLAX
-   ========================= */
+
 
 function initHomeHeroParallax() {
     const hero = document.querySelector(".home-hero");
@@ -58,9 +47,7 @@ function initHomeHeroParallax() {
     updateParallax();
 }
 
-/* =========================
-   REQUEST CARD TILT
-   ========================= */
+
 
 function initHomeRequestCardTilt() {
     const card = document.querySelector(".hero-request-card");
@@ -90,9 +77,7 @@ function initHomeRequestCardTilt() {
     card.addEventListener("blur", resetCard, true);
 }
 
-/* =========================
-   COMFORT IMAGE MOTION
-   ========================= */
+
 
 function initHomeComfortMotion() {
     const section = document.querySelector(".home-comfort");

@@ -1,16 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   CLIMORA — INDIVIDUAL SERVICE PAGE SCRIPT
-   File: /js/service-page.js
 
-   Handles:
-   - current service lookup from config
-   - service FAQ JSON-LD schema
-   - service image soft motion
-   - related/current service active states
-   - service CTA URL helper
-   ========================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
     const service = getCurrentService();
@@ -27,9 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initServiceCardsMotion();
 });
 
-/* =========================
-   CURRENT SERVICE
-   ========================= */
+
 
 function getCurrentService() {
     const config = window.SITE_CONFIG;
@@ -47,9 +35,7 @@ function getCurrentService() {
     return config.services.find((service) => service.href === currentPage) || null;
 }
 
-/* =========================
-   FAQ JSON-LD
-   ========================= */
+
 
 function injectServiceFaqSchema(service) {
     if (!Array.isArray(service.faq) || !service.faq.length) return;
@@ -82,9 +68,7 @@ function injectServiceFaqSchema(service) {
     document.head.appendChild(script);
 }
 
-/* =========================
-   ACTIVE SERVICE LINKS
-   ========================= */
+
 
 function setServiceActiveLinks(service) {
     const links = document.querySelectorAll(
@@ -96,9 +80,7 @@ function setServiceActiveLinks(service) {
     });
 }
 
-/* =========================
-   CTA SERVICE URL HELPER
-   ========================= */
+
 
 function enhanceServiceCtaLinks(service) {
     const ctaLinks = document.querySelectorAll('a[href^="contact.html"]');
@@ -118,9 +100,6 @@ function enhanceServiceCtaLinks(service) {
     });
 }
 
-/* =========================
-   IMAGE MOTION
-   ========================= */
 
 function initServiceImageMotion() {
     const mediaBlocks = document.querySelectorAll(".service-hero-media, .service-evaluation-media");
@@ -153,9 +132,7 @@ function initServiceImageMotion() {
     });
 }
 
-/* =========================
-   CARD MICRO MOTION
-   ========================= */
+
 
 function initServiceCardsMotion() {
     const cards = document.querySelectorAll(

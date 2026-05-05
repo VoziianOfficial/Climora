@@ -1,14 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   CLIMORA — ABOUT PAGE SCRIPT
-   File: /js/about.js
 
-   Handles:
-   - about hero image soft motion
-   - about model image scroll motion
-   - subtle card interaction
-   ========================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
     initAboutHeroMotion();
@@ -16,9 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initAboutCardsMotion();
 });
 
-/* =========================
-   HERO IMAGE MOTION
-   ========================= */
 
 function initAboutHeroMotion() {
     const card = document.querySelector(".about-hero-card");
@@ -46,9 +35,7 @@ function initAboutHeroMotion() {
     });
 }
 
-/* =========================
-   MODEL IMAGE SCROLL MOTION
-   ========================= */
+
 
 function initAboutModelScrollMotion() {
     const section = document.querySelector(".about-model-section");
@@ -96,9 +83,7 @@ function initAboutModelScrollMotion() {
     updateMotion();
 }
 
-/* =========================
-   CARD MICRO MOTION
-   ========================= */
+
 
 function initAboutCardsMotion() {
     const cards = document.querySelectorAll(

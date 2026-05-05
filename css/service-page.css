@@ -1,11 +1,4 @@
-/* ==========================================================
-   CLIMORA — INDIVIDUAL SERVICE PAGES
-   File: /css/service-page.css
-   ========================================================== */
 
-/* =========================
-   SERVICE HERO — COMPACT PHOTO BACKGROUND
-   ========================= */
 
 .service-hero {
     position: relative;
@@ -175,9 +168,7 @@
     display: none;
 }
 
-/* =========================
-   SERVICE HERO RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .service-hero {
@@ -311,9 +302,7 @@
         font-size: 0.72rem;
     }
 }
-/* =========================
-   OVERVIEW
-   ========================= */
+
 
 .service-overview-section {
     overflow: hidden;
@@ -398,9 +387,7 @@
     line-height: 1.55;
 }
 
-/* =========================
-   EVALUATION
-   ========================= */
+
 
 .service-evaluation-section {
     overflow: hidden;
@@ -521,9 +508,7 @@
     stroke-width: 2.7;
 }
 
-/* =========================
-   FACTORS
-   ========================= */
+
 
 .service-factors-section {
     overflow: hidden;
@@ -587,9 +572,7 @@
     line-height: 1.58;
 }
 
-/* =========================
-   CTA
-   ========================= */
+
 
 .service-cta-section {
     overflow: hidden;
@@ -620,17 +603,11 @@
     color: var(--color-muted);
 }
 
-/* =========================
-   SERVICE FAQ
-   ========================= */
+
 
 .service-faq-section {
     overflow: hidden;
 }
-
-/* =========================
-   RELATED SERVICES
-   ========================= */
 
 .service-related-section {
     padding-bottom: 72px;
@@ -701,9 +678,7 @@
     line-height: 1.58;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
 
@@ -867,9 +842,7 @@
     }
 }
 
-/* =========================
-   SERVICE HERO — SPACING TWEAK
-   ========================= */
+
 
 .service-hero .container-wide {
     padding-top: 18px;
@@ -899,9 +872,7 @@
     }
 }
 
-/* =========================
-   SERVICE OVERVIEW — COLOR HOVERS
-   ========================= */
+
 
 .service-overview-panel {
     transition:
@@ -989,9 +960,7 @@
 }
 
 
-/* =========================
-   SERVICE FACTORS — COMPACT BOARD
-   ========================= */
+
 
 .service-factor-board-section {
     padding: 34px 0 46px;
@@ -1051,7 +1020,6 @@
     line-height: 1.58;
 }
 
-/* List layout */
 .service-factor-board-list {
     position: relative;
     z-index: 1;
@@ -1060,7 +1028,6 @@
     gap: 10px;
 }
 
-/* Horizontal rows */
 .service-factor-board-list article {
     position: relative;
     display: grid;
@@ -1101,7 +1068,7 @@
     opacity: 1;
 }
 
-/* Number */
+
 .service-factor-board-list article>span {
     position: relative;
     z-index: 1;
@@ -1131,7 +1098,7 @@
     transform: rotate(-4deg);
 }
 
-/* Text */
+
 .service-factor-board-list article div {
     position: relative;
     z-index: 1;
@@ -1155,7 +1122,7 @@
     line-height: 1.42;
 }
 
-/* Icon */
+
 .service-factor-board-list article>i,
 .service-factor-board-list article>svg {
     position: relative;
@@ -1176,9 +1143,7 @@
     transform: rotate(-4deg) scale(1.08);
 }
 
-/* =========================
-   SERVICE FACTOR BOARD RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .service-factor-board-section {
@@ -1284,9 +1249,6 @@
 }
 
 
-/* =========================
-   SERVICE FAQ — TWO COLUMN COMPACT
-   ========================= */
 
 .service-faq-section {
     padding: 38px 0 52px;
@@ -1317,7 +1279,6 @@
     text-align: center;
 }
 
-/* FAQ grid: 2 columns / 2 rows */
 .service-faq-section .faq-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1326,7 +1287,7 @@
     margin: 0 auto;
 }
 
-/* FAQ card */
+
 .service-faq-section .faq-item {
     overflow: hidden;
     border: 1px solid rgba(221, 214, 204, 0.9);
@@ -1348,7 +1309,7 @@
     transform: translateY(-2px);
 }
 
-/* Question button */
+
 .service-faq-section .faq-question {
     display: grid;
     grid-template-columns: 1fr 34px;
@@ -1397,7 +1358,7 @@
     transform: rotate(45deg);
 }
 
-/* Answer animation */
+
 .service-faq-section .faq-answer {
     display: grid;
     grid-template-rows: 0fr;
@@ -1422,7 +1383,7 @@
     padding-bottom: 16px;
 }
 
-/* Tablet */
+
 @media (max-width: 900px) {
     .service-faq-section .faq-list {
         max-width: 760px;
@@ -1437,7 +1398,6 @@
     }
 }
 
-/* Mobile */
 @media (max-width: 640px) {
     .service-faq-section {
         padding: 30px 0 40px;
@@ -1486,9 +1446,7 @@
 }
 
 
-/* =========================
-   RELATED SERVICES — FINAL PHOTO PANEL
-   ========================= */
+
 
 .service-related-redesign {
     padding: 34px 0 72px;
@@ -1529,7 +1487,7 @@
         radial-gradient(circle at 50% 0%, rgba(208, 138, 50, 0.22), transparent 34%);
 }
 
-/* Header */
+
 .service-related-head {
     max-width: 980px;
     margin: 0 auto 22px;
@@ -1565,7 +1523,7 @@
     line-height: 1.58;
 }
 
-/* Cards */
+
 .service-related-redesign .related-service-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1660,9 +1618,7 @@
     line-height: 1.45;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .service-related-redesign {
@@ -1760,9 +1716,7 @@
     }
 }
 
-/* =========================
-   SERVICE HERO PHOTO POSITION FIX
-   ========================= */
+
 
 .service-hero.service-hero-photo::before {
     background-position: right 18% !important;
@@ -1780,9 +1734,7 @@
     }
 }
 
-/* =========================
-   SERVICE HERO MINI POINTS — MOBILE ROW
-   ========================= */
+
 
 @media (max-width: 760px) {
     .service-hero-mini-points {

@@ -1,14 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   CLIMORA — SERVICES PAGE SCRIPT
-   File: /js/services.js
 
-   Handles:
-   - services hero image motion
-   - service catalog hover enhancement
-   - services page FAQ JSON-LD schema
-   ========================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
     initServicesHeroMotion();
@@ -16,9 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     injectServicesFaqSchema();
 });
 
-/* =========================
-   HERO IMAGE MOTION
-   ========================= */
+
 
 function initServicesHeroMotion() {
     const visual = document.querySelector(".services-hero-visual");
@@ -46,9 +36,7 @@ function initServicesHeroMotion() {
     });
 }
 
-/* =========================
-   CATALOG CARD MOTION
-   ========================= */
+
 
 function initCatalogCardMotion() {
     const cards = document.querySelectorAll(".catalog-service-card");
@@ -85,9 +73,6 @@ function initCatalogCardMotion() {
     });
 }
 
-/* =========================
-   SERVICES FAQ JSON-LD
-   ========================= */
 
 function injectServicesFaqSchema() {
     const page = document.body.dataset.page;

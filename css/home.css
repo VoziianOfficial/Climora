@@ -265,9 +265,7 @@
     min-height: 44px;
 }
 
-/* =========================
-   INTRO STRIP
-   ========================= */
+
 
 .home-intro-strip {
     margin-top: -90px;
@@ -328,9 +326,7 @@
     line-height: 1.25;
 }
 
-/* =========================
-   SERVICES PREVIEW
-   ========================= */
+
 
 .home-services {
     overflow: hidden;
@@ -473,9 +469,7 @@
     line-height: 1.45;
 }
 
-/* =========================
-   PLATFORM MODEL
-   ========================= */
+
 
 .platform-model {
     overflow: hidden;
@@ -557,9 +551,7 @@
     line-height: 1.55;
 }
 
-/* =========================
-   PROCESS
-   ========================= */
+
 
 .home-process {
     overflow: hidden;
@@ -630,9 +622,7 @@
     font-size: 0.93rem;
 }
 
-/* =========================
-   COMFORT SECTION
-   ========================= */
+
 
 .home-comfort {
     overflow: hidden;
@@ -756,9 +746,7 @@
     line-height: 1.55;
 }
 
-/* =========================
-   FINAL CTA
-   ========================= */
+
 
 .final-cta {
     padding-bottom: 72px;
@@ -789,9 +777,7 @@
     color: var(--color-muted);
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .home-hero {
@@ -1040,10 +1026,7 @@
     }
 }
 
-/* =========================
-   HERO TOP SPACE FIX
-   Tablet / Mobile
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .home-hero {
@@ -1087,9 +1070,7 @@
     }
 }
 
-/* =========================
-   PROCESS — WIDE COMPACT PHOTO SECTION
-   ========================= */
+
 
 .home-process {
     padding: 34px 0;
@@ -1107,7 +1088,7 @@
     isolation: isolate;
 }
 
-/* Background photo */
+
 .home-process .container-wide::before {
     position: absolute;
     inset: 0;
@@ -1118,7 +1099,6 @@
     transform: scale(1.03);
 }
 
-/* Dark readable overlay */
 .home-process .container-wide::after {
     position: absolute;
     inset: 0;
@@ -1132,7 +1112,7 @@
         radial-gradient(circle at 8% 0%, rgba(208, 138, 50, 0.18), transparent 32%);
 }
 
-/* Heading */
+
 .home-process .section-heading {
     max-width: none;
     width: 100%;
@@ -1170,7 +1150,7 @@
     line-height: 1.58;
 }
 
-/* Cards */
+
 .home-process .process-line {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1208,7 +1188,6 @@
     transform: translateY(-3px);
 }
 
-/* Top-right number / icon badge */
 .home-process .process-line article span {
     position: absolute;
     top: 14px;
@@ -1237,7 +1216,7 @@
     transform: rotate(-4deg) scale(1.04);
 }
 
-/* Equal content placement */
+
 .home-process .process-line article h3 {
     max-width: calc(100% - 52px);
     margin: 0;
@@ -1258,9 +1237,7 @@
     line-height: 1.45;
 }
 
-/* =========================
-   PROCESS RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .home-process {
@@ -1387,11 +1364,7 @@
     }
 }
 
-/* =========================
-   PROCESS TEXT CENTER FIX
-   ========================= */
 
-/* Heading centered */
 .home-process .section-heading {
     display: block;
     max-width: 980px;
@@ -1415,7 +1388,6 @@
     text-align: center;
 }
 
-/* Cards content centered */
 .home-process .process-line article {
     display: flex;
     flex-direction: column;
@@ -1426,13 +1398,13 @@
     text-align: center;
 }
 
-/* Number stays top right */
+
 .home-process .process-line article span {
     top: 14px;
     right: 14px;
 }
 
-/* Card title */
+
 .home-process .process-line article h3 {
     max-width: 230px;
     margin: 0 auto;
@@ -1442,7 +1414,7 @@
     line-height: 1.24;
 }
 
-/* Card text */
+
 .home-process .process-line article p {
     max-width: 250px;
     margin: 10px auto 0;
@@ -1451,7 +1423,7 @@
     line-height: 1.45;
 }
 
-/* Tablet */
+
 @media (max-width: 860px) {
     .home-process .section-heading {
         max-width: 720px;
@@ -1472,7 +1444,7 @@
     }
 }
 
-/* Mobile */
+
 @media (max-width: 760px) {
     .home-process .section-heading {
         text-align: center;
@@ -1517,9 +1489,7 @@
 }
 
 
-/* =========================
-   FAQ — WIDE SPLIT CLEAN
-   ========================= */
+
 
 .faq-split-section {
     padding: 42px 0 58px;
@@ -1571,7 +1541,7 @@
     line-height: 1.6;
 }
 
-/* FAQ list */
+
 
 .faq-split-section .faq-list {
     display: grid;
@@ -1757,7 +1727,7 @@
     margin-top: 26px;
 }
 
-/* Responsive */
+
 
 @media (max-width: 1080px) {
     .faq-split-panel {
@@ -1828,9 +1798,7 @@
     }
 }
 
-/* =========================
-   INTRO STRIP — TABLET COMPACT DESKTOP VIEW
-   ========================= */
+
 
 @media (min-width: 761px) and (max-width: 1120px) {
     .home-intro-strip {

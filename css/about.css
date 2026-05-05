@@ -1,10 +1,4 @@
-/* ==========================================================
-   CLIMORA — ABOUT PAGE
-   File: /css/about.css
-   ========================================================== */
-/* =========================
-   ABOUT HERO — COMPACT PHOTO BACKGROUND
-   ========================= */
+
 
 .about-hero {
     padding: 34px 0 44px;
@@ -23,7 +17,7 @@
     isolation: isolate;
 }
 
-/* Background photo */
+
 .about-hero .container-wide::before {
     position: absolute;
     inset: 0;
@@ -34,7 +28,6 @@
     transform: scale(1.03);
 }
 
-/* Overlay for readable text */
 .about-hero .container-wide::after {
     position: absolute;
     inset: 0;
@@ -54,7 +47,7 @@
     min-height: 468px;
 }
 
-/* Text */
+
 .about-hero-copy {
     max-width: 1120px;
 }
@@ -96,12 +89,11 @@
     margin-top: 26px;
 }
 
-/* Hide old big image card */
 .about-hero-image {
     display: none;
 }
 
-/* Small floating note */
+
 .about-hero-card {
     position: absolute;
     right: 0;
@@ -162,9 +154,7 @@
     line-height: 1.35;
 }
 
-/* =========================
-   ABOUT HERO RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .about-hero {
@@ -294,9 +284,7 @@
     }
 }
 
-/* =========================
-   STORY
-   ========================= */
+
 
 .about-story {
     overflow: hidden;
@@ -375,9 +363,7 @@
     line-height: 1.55;
 }
 
-/* =========================
-   MODEL SECTION
-   ========================= */
+
 
 .about-model-section {
     overflow: hidden;
@@ -503,9 +489,7 @@
     line-height: 1.55;
 }
 
-/* =========================
-   HELP GRID
-   ========================= */
+
 
 .about-help {
     overflow: hidden;
@@ -569,9 +553,6 @@
     line-height: 1.58;
 }
 
-/* =========================
-   PRINCIPLES
-   ========================= */
 
 .about-principles {
     overflow: hidden;
@@ -648,9 +629,7 @@
     line-height: 1.55;
 }
 
-/* =========================
-   FINAL CTA
-   ========================= */
+
 
 .about-final {
     padding-bottom: 72px;
@@ -681,9 +660,7 @@
     color: var(--color-muted);
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
 
@@ -823,9 +800,7 @@
     }
 }
 
-/* =========================
-   ABOUT HERO — HIDE NOTE CARD ON TABLET/MOBILE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .about-hero-card {
@@ -834,9 +809,6 @@
 }
 
 
-/* =========================
-   ABOUT HERO — DESKTOP FILLER + TABLET COMPACT
-   ========================= */
 
 .about-hero-mini-strip {
     position: absolute;
@@ -882,7 +854,6 @@
     stroke-width: 2.4;
 }
 
-/* Tablet: make hero more compact and hide bottom extras */
 @media (max-width: 1120px) {
     .about-hero {
         padding: 24px 0 34px;
@@ -921,7 +892,7 @@
     }
 }
 
-/* Mobile: even tighter */
+
 @media (max-width: 760px) {
     .about-hero {
         padding: 20px 0 30px;
@@ -945,9 +916,7 @@
     }
 }
 
-/* =========================
-   ABOUT STORY — HOVER COLOR STATES
-   ========================= */
+
 
 .about-story-panel {
     transition:
@@ -1007,9 +976,7 @@
 }
 
 
-/* =========================
-   HELP — COMPACT PREMIUM PANEL
-   ========================= */
+
 
 .about-help {
     padding: 42px 0 52px;
@@ -1026,7 +993,7 @@
     box-shadow: var(--shadow-card);
 }
 
-/* Heading */
+
 .about-help .section-heading {
     max-width: 980px;
     margin: 0 auto 24px;
@@ -1054,7 +1021,7 @@
     line-height: 1.58;
 }
 
-/* Grid */
+
 .about-help-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1063,7 +1030,7 @@
     margin: 0 auto;
 }
 
-/* Cards */
+
 .about-help-grid article {
     position: relative;
     display: grid;
@@ -1082,7 +1049,7 @@
         background-color var(--transition-base);
 }
 
-/* Decorative circle */
+
 .about-help-grid article::after {
     position: absolute;
     right: -48px;
@@ -1097,7 +1064,7 @@
         border-color var(--transition-base);
 }
 
-/* Icon top right */
+
 .about-help-grid article>svg {
     position: absolute;
     top: 16px;
@@ -1111,7 +1078,7 @@
         transform var(--transition-base);
 }
 
-/* Equal text placement */
+
 .about-help-grid h3 {
     align-self: end;
     max-width: calc(100% - 34px);
@@ -1131,7 +1098,6 @@
     line-height: 1.5;
 }
 
-/* Hover */
 .about-help-grid article:hover {
     border-color: rgba(208, 138, 50, 0.36);
     background: rgba(241, 222, 195, 0.42);
@@ -1153,9 +1119,7 @@
     color: var(--color-accent-hover);
 }
 
-/* =========================
-   HELP RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .about-help {
@@ -1246,9 +1210,7 @@
     }
 }
 
-/* =========================
-   ABOUT HELP — PHOTO BACKGROUND + NARROW CARDS
-   ========================= */
+
 
 .about-help {
     padding: 38px 0 48px;
@@ -1266,7 +1228,7 @@
     isolation: isolate;
 }
 
-/* Background photo */
+
 .about-help>.container-wide::before {
     position: absolute;
     inset: 0;
@@ -1277,7 +1239,6 @@
     transform: scale(1.03);
 }
 
-/* Dark overlay */
 .about-help>.container-wide::after {
     position: absolute;
     inset: 0;
@@ -1291,7 +1252,7 @@
         radial-gradient(circle at 10% 0%, rgba(208, 138, 50, 0.2), transparent 34%);
 }
 
-/* Inner panel becomes transparent */
+
 .about-help-panel {
     padding: 0;
     border: 0;
@@ -1300,7 +1261,6 @@
     box-shadow: none;
 }
 
-/* Heading */
 .about-help .section-heading {
     max-width: 980px;
     margin: 0 auto 24px;
@@ -1336,7 +1296,7 @@
     line-height: 1.58;
 }
 
-/* Cards narrower */
+
 .about-help-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1345,7 +1305,7 @@
     margin: 0 auto;
 }
 
-/* Cards */
+
 .about-help-grid article {
     position: relative;
     display: grid;
@@ -1379,7 +1339,7 @@
         border-color var(--transition-base);
 }
 
-/* Icon top right */
+
 .about-help-grid article>svg {
     position: absolute;
     top: 15px;
@@ -1393,7 +1353,6 @@
         transform var(--transition-base);
 }
 
-/* Equal content placement */
 .about-help-grid h3 {
     align-self: end;
     max-width: calc(100% - 34px);
@@ -1413,7 +1372,7 @@
     line-height: 1.45;
 }
 
-/* Hover */
+
 .about-help-grid article:hover {
     border-color: rgba(208, 138, 50, 0.42);
     background: rgba(208, 138, 50, 0.16);
@@ -1435,9 +1394,7 @@
     color: #fff;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .about-help {

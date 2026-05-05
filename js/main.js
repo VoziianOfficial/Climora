@@ -22,9 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initLibraries();
 });
 
-/* =========================
-   CURRENT PAGE
-   ========================= */
+
 
 function getCurrentPageName() {
     const path = window.location.pathname;
@@ -33,9 +31,7 @@ function getCurrentPageName() {
     return fileName || "index.html";
 }
 
-/* =========================
-   PAGE META FROM CONFIG
-   ========================= */
+
 
 function applyPageMeta(config) {
     const currentPage = getCurrentPageName();
@@ -63,9 +59,7 @@ function applyPageMeta(config) {
     }
 }
 
-/* =========================
-   CONFIG VALUE INJECTION
-   ========================= */
+
 
 function injectConfigValues(config) {
     const {
@@ -148,9 +142,7 @@ function replaceTextNodeTokens(element, token, value) {
     });
 }
 
-/* =========================
-   ACTIVE NAVIGATION
-   ========================= */
+
 
 function setActiveNavigation() {
     const currentPage = getCurrentPageName();
@@ -171,9 +163,7 @@ function setActiveNavigation() {
     });
 }
 
-/* =========================
-   STICKY HEADER STATE
-   ========================= */
+
 
 function initStickyHeader() {
     const header = document.querySelector("[data-site-header]");
@@ -191,9 +181,7 @@ function initStickyHeader() {
     });
 }
 
-/* =========================
-   MOBILE MENU
-   ========================= */
+
 
 function initMobileMenu() {
     const menu = document.querySelector("[data-mobile-menu]");
@@ -280,9 +268,7 @@ function trapMobileMenuFocus(menu, toggle) {
     });
 }
 
-/* =========================
-   FAQ ACCORDION
-   ========================= */
+
 
 function initFaqAccordion() {
     const faqItems = document.querySelectorAll("[data-faq-item]");
@@ -315,9 +301,7 @@ function initFaqAccordion() {
     });
 }
 
-/* =========================
-   POLICY / COOKIE BANNER
-   ========================= */
+
 
 function initPolicyBanner(config) {
     const banner = document.querySelector("[data-policy-banner]");
@@ -344,9 +328,7 @@ function initPolicyBanner(config) {
     });
 }
 
-/* =========================
-   MINI REQUEST FORM
-   ========================= */
+
 
 function initMiniRequestForms() {
     const forms = document.querySelectorAll("[data-mini-form]");
@@ -413,9 +395,7 @@ function clearFormError(element) {
     element.removeAttribute("aria-invalid");
 }
 
-/* =========================
-   FAQ JSON-LD SCHEMA
-   ========================= */
+
 
 function injectGlobalFaqSchema(config) {
     const page = document.body.dataset.page;
@@ -454,9 +434,7 @@ function injectGlobalFaqSchema(config) {
     document.head.appendChild(script);
 }
 
-/* =========================
-   LIBRARIES
-   ========================= */
+
 
 function initLibraries() {
     if (window.lucide) {

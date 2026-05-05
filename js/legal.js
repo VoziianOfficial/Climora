@@ -1,22 +1,13 @@
 "use strict";
 
-/* ==========================================================
-   CLIMORA — LEGAL PAGES SCRIPT
-   File: /js/legal.js
 
-   Handles:
-   - active legal sidebar links on scroll
-   - smooth legal anchor behavior
-   ========================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
     initLegalSidebarActiveState();
     initLegalAnchorOffset();
 });
 
-/* =========================
-   ACTIVE SIDEBAR LINKS
-   ========================= */
+
 
 function initLegalSidebarActiveState() {
     const sidebarLinks = document.querySelectorAll(".legal-sidebar a");
@@ -64,9 +55,7 @@ function initLegalSidebarActiveState() {
     });
 }
 
-/* =========================
-   SMOOTH ANCHOR BEHAVIOR
-   ========================= */
+
 
 function initLegalAnchorOffset() {
     const links = document.querySelectorAll(".legal-sidebar a[href^='#']");

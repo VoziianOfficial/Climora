@@ -5,14 +5,7 @@
 @import url("./service-page.css");
 @import url("./legal.css");
 
-/* ==========================================================
-   CLIMORA — GLOBAL DESIGN SYSTEM
-   File: /css/style.css
-   ========================================================== */
 
-/* =========================
-   CSS VARIABLES
-   ========================= */
 
 :root {
     --color-bg: #F4F1EC;
@@ -59,9 +52,7 @@
     --transition-slow: 420ms ease;
 }
 
-/* =========================
-   RESET / BASE
-   ========================= */
+
 
 *,
 *::before,
@@ -161,9 +152,7 @@ h6 {
     color: var(--color-heading);
 }
 
-/* =========================
-   ACCESSIBILITY
-   ========================= */
+
 
 .skip-link {
     position: fixed;
@@ -201,9 +190,7 @@ h6 {
     }
 }
 
-/* =========================
-   TYPOGRAPHY
-   ========================= */
+
 
 h1,
 h2,
@@ -243,9 +230,7 @@ p {
     margin-left: auto;
 }
 
-/* =========================
-   LAYOUT HELPERS
-   ========================= */
+
 
 .container,
 .container-wide {
@@ -326,9 +311,7 @@ p {
     margin-inline: auto;
 }
 
-/* =========================
-   BUTTONS
-   ========================= */
+
 
 .btn {
     display: inline-flex;
@@ -391,9 +374,7 @@ p {
     width: 100%;
 }
 
-/* =========================
-   LOGO
-   ========================= */
+
 
 .site-logo {
     display: inline-flex;
@@ -505,9 +486,7 @@ p {
     text-transform: uppercase;
 }
 
-/* =========================
-   HEADER
-   ========================= */
+
 
 .site-header {
     position: sticky;
@@ -717,9 +696,7 @@ p {
     transform: rotate(-45deg);
 }
 
-/* =========================
-   MOBILE PHONE CTA
-   ========================= */
+
 
 .mobile-phone-cta {
     position: fixed;
@@ -747,9 +724,7 @@ p {
     color: var(--color-accent);
 }
 
-/* =========================
-   MOBILE MENU
-   ========================= */
+
 
 .mobile-menu {
     position: fixed;
@@ -901,9 +876,7 @@ p {
     color: var(--color-accent);
 }
 
-/* =========================
-   FORMS
-   ========================= */
+
 
 .form-grid {
     display: grid;
@@ -1036,9 +1009,7 @@ p {
     outline-offset: 3px;
 }
 
-/* =========================
-   FAQ
-   ========================= */
+
 
 .faq-section {
     overflow: hidden;
@@ -1117,9 +1088,7 @@ p {
     padding-bottom: 20px;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
+
 
 .site-footer {
     position: relative;
@@ -1275,9 +1244,6 @@ p {
     max-width: 1120px;
 }
 
-/* =========================
-   POLICY BANNER
-   ========================= */
 
 .policy-banner {
     position: fixed;
@@ -1349,9 +1315,6 @@ p {
     gap: 10px;
 }
 
-/* =========================
-   SMALL GLOBAL COMPONENTS
-   ========================= */
 
 .soft-panel {
     border: 1px solid rgba(221, 214, 204, 0.9);
@@ -1376,9 +1339,7 @@ p {
     height: 18px;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .desktop-nav {

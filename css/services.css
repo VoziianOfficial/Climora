@@ -1,11 +1,4 @@
-/* ==========================================================
-   CLIMORA — SERVICES PAGE
-   File: /css/services.css
-   ========================================================== */
 
-/* =========================
-   SERVICES HERO
-   ========================= */
 
 .services-hero {
     padding-top: 42px;
@@ -115,9 +108,7 @@
 
 
 
-/* =========================
-   COMPARE PANEL
-   ========================= */
+
 
 .services-compare {
     overflow: hidden;
@@ -202,17 +193,13 @@
 
 
 
-/* =========================
-   SERVICES FAQ
-   ========================= */
+
 
 .services-faq {
     overflow: hidden;
 }
 
-/* =========================
-   FINAL CTA
-   ========================= */
+
 
 .services-final {
     padding-bottom: 72px;
@@ -243,9 +230,7 @@
     color: var(--color-muted);
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .services-hero-grid {
@@ -406,9 +391,7 @@
     }
 }
 
-/* =========================
-   CATALOG — EQUAL COMPACT CARDS
-   ========================= */
+
 
 .services-catalog {
     padding: 42px 0 52px;
@@ -434,14 +417,14 @@
     line-height: 1.58;
 }
 
-/* Grid */
+
 .services-catalog-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 14px;
 }
 
-/* Equal cards */
+
 .catalog-service-card,
 .catalog-service-card-large,
 .catalog-service-card-wide {
@@ -467,7 +450,7 @@
     transform: translateY(-4px);
 }
 
-/* Image */
+
 .catalog-service-card img {
     position: absolute;
     inset: 0;
@@ -486,7 +469,7 @@
     filter: saturate(1) contrast(1.04);
 }
 
-/* Overlay */
+
 .catalog-service-card::after {
     position: absolute;
     inset: 0;
@@ -502,7 +485,7 @@
             transparent 68%);
 }
 
-/* Icon top right */
+
 .catalog-service-icon {
     position: absolute;
     top: 15px;
@@ -614,9 +597,7 @@
     transform: translateX(3px);
 }
 
-/* =========================
-   CATALOG RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .services-catalog {
@@ -713,9 +694,7 @@
     }
 }
 
-/* =========================
-   COMPARE PANEL — HOVER STATES
-   ========================= */
+
 
 .services-compare-panel {
     transition:
@@ -749,7 +728,7 @@
     box-shadow: 0 18px 48px rgba(20, 21, 23, 0.08);
 }
 
-/* Row hover */
+
 .compare-row {
     transition:
         background-color var(--transition-base),
@@ -768,7 +747,6 @@
     color: var(--color-heading);
 }
 
-/* Header row soft accent on panel hover */
 .services-compare-panel:hover .compare-row-head {
     background:
         linear-gradient(135deg, var(--color-dark), #252120);
@@ -779,9 +757,7 @@
 }
 
 
-/* =========================
-   SERVICE PATH — ROUTE MAP
-   ========================= */
+
 
 .service-path-map-section {
     padding: 40px 0 52px;
@@ -829,7 +805,7 @@
     line-height: 1.58;
 }
 
-/* Route strip */
+
 .service-path-map {
     position: relative;
     display: grid;
@@ -840,7 +816,7 @@
     background: rgba(255, 255, 255, 0.72);
 }
 
-/* connecting line */
+
 .service-path-map::before {
     position: absolute;
     top: 44px;
@@ -946,9 +922,7 @@
     line-height: 1.48;
 }
 
-/* =========================
-   SERVICE PATH RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 1120px) {
     .service-path-map-section {
@@ -1062,9 +1036,6 @@
     }
 }
 
-/* =========================
-   MOBILE HEADINGS CENTER FIX
-   ========================= */
 
 @media (max-width: 760px) {
 

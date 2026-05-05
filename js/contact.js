@@ -1,15 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   CLIMORA — CONTACT PAGE SCRIPT
-   File: /js/contact.js
 
-   Handles:
-   - prefill form from URL params
-   - contact form validation
-   - styled status messages
-   - contact card micro interactions
-   ========================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
     prefillContactFormFromUrl();
@@ -17,9 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initContactCardMotion();
 });
 
-/* =========================
-   PREFILL FROM URL
-   ========================= */
+
 
 function prefillContactFormFromUrl() {
     const form = document.querySelector("[data-contact-form]");
@@ -48,9 +37,7 @@ function prefillContactFormFromUrl() {
     }
 }
 
-/* =========================
-   CONTACT FORM
-   ========================= */
+
 
 function initContactForm() {
     const form = document.querySelector("[data-contact-form]");
@@ -181,9 +168,7 @@ function showStatus(status, message, type) {
     status.classList.toggle("is-success", type === "success");
 }
 
-/* =========================
-   CONTACT CARD MOTION
-   ========================= */
+
 
 function initContactCardMotion() {
     const cards = document.querySelectorAll(".contact-info-card, .contact-checklist-grid article");
