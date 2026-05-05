@@ -59,18 +59,7 @@
         linear-gradient(180deg, rgba(20, 21, 23, 0.04) 0%, rgba(20, 21, 23, 0.2) 48%, rgba(20, 21, 23, 0.72) 100%);
 }
 
-.services-hero-visual::after {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    z-index: 2;
-    width: 112px;
-    height: 112px;
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 50%;
-    content: "";
-    backdrop-filter: blur(6px);
-}
+
 
 .services-hero-visual img {
     width: 100%;
