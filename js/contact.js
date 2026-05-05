@@ -93,39 +93,43 @@ function initContactForm() {
 function validateContactFields(fields) {
     const errors = [];
 
-    if (!fields.name.value.trim()) {
+    if (!fields.name || !fields.name.value.trim()) {
         setFieldError(fields.name);
         errors.push("Please enter your full name.");
     }
 
-    if (!isValidEmail(fields.email.value)) {
+    if (!fields.email || !isValidEmail(fields.email.value)) {
         setFieldError(fields.email);
         errors.push("Please enter a valid email address.");
     }
 
-    if (!fields.phone.value.trim()) {
+    /*
+      Phone field is optional now because the compact form does not include it.
+      If you add <input name="phone"> back later, this validation will work again.
+    */
+    if (fields.phone && !fields.phone.value.trim()) {
         setFieldError(fields.phone);
         errors.push("Please enter your phone number.");
     }
 
-    if (!isValidZip(fields.zip.value)) {
+    if (!fields.zip || !isValidZip(fields.zip.value)) {
         setFieldError(fields.zip);
         errors.push("Please enter a valid 5-digit ZIP code.");
     }
 
-    if (!fields.service.value) {
+    if (!fields.service || !fields.service.value) {
         setFieldError(fields.service);
         errors.push("Please select a service type.");
     }
 
-    if (!fields.message.value.trim() || fields.message.value.trim().length < 12) {
+    if (!fields.message || !fields.message.value.trim() || fields.message.value.trim().length < 12) {
         setFieldError(fields.message);
         errors.push("Please add a short description of the HVAC request.");
     }
 
-    if (!fields.consent.checked) {
+    if (!fields.consent || !fields.consent.checked) {
         const customCheck = fields.consent
-            .closest(".form-check")
+            ?.closest(".form-check")
             ?.querySelector(".form-check-custom");
 
         setFieldError(customCheck);

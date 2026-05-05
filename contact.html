@@ -246,200 +246,179 @@
             </div>
         </section>
 
-        <!-- =========================
-             CONTACT FORM + MAP
-             ========================= -->
-        <section class="section contact-main-section">
-            <div class="container-wide">
-                <div class="contact-main-grid">
-                    <div class="contact-form-card" data-aos="fade-right">
-                        <div class="contact-form-head">
-                            <p class="section-kicker">
-                                <i data-lucide="clipboard-list" aria-hidden="true"></i>
-                                Request details
-                            </p>
+<!-- =========================
+     CONTACT FORM + MAP
+     ========================= -->
+<section class="section contact-main-section contact-request-section">
+    <div class="container-wide">
+        <div class="contact-request-panel">
+            <div class="contact-request-info" data-aos="fade-right">
+                <p class="section-kicker">
+                    <i data-lucide="clipboard-list" aria-hidden="true"></i>
+                    Request details
+                </p>
 
-                            <h2>Begin with a few simple details.</h2>
+                <h2>Start with the basics. Compare provider options after that.</h2>
 
-                            <p>
-                                This form helps structure the request before homeowners compare independent local
-                                HVAC provider options.
-                            </p>
-                        </div>
+                <p>
+                    Share the service type, ZIP code, and a short note about the HVAC concern. Climora helps organize
+                    the request for matching with independent provider options.
+                </p>
 
-                        <form class="contact-form" data-contact-form>
-                            <div class="form-grid">
-                                <label class="form-field">
-                                    <span>Full name</span>
-                                    <input type="text" name="name" placeholder="Your name" autocomplete="name">
-                                </label>
+        <div class="contact-mini-map contact-real-map" aria-label="Reference office map">
+            <iframe title="Map showing 515 Congress Avenue, Austin, TX 78701, USA"
+                src="https://www.google.com/maps?q=515%20Congress%20Avenue%2C%20Austin%2C%20TX%2078701%2C%20USA&output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        
+            <div class="contact-mini-map-note">
+                <small>Reference office</small>
+                <strong>515 Congress Avenue, Austin, TX 78701, USA</strong>
+            </div>
+        </div>
 
-                                <label class="form-field">
-                                    <span>Email address</span>
-                                    <input type="email" name="email" placeholder="you@example.com" autocomplete="email">
-                                </label>
-                            </div>
+                <div class="contact-quick-links">
+                    <a href="tel:+18886243178" class="contact-quick-link" data-phone-href>
+                        <i data-lucide="phone" aria-hidden="true"></i>
+                        <span>
+                            <small>Phone</small>
+                            <strong data-phone>+1 888 624 3178</strong>
+                        </span>
+                    </a>
 
-                            <div class="form-grid">
-                                <label class="form-field">
-                                    <span>Phone number</span>
-                                    <input type="tel" name="phone" placeholder="+1 555 000 0000" autocomplete="tel">
-                                </label>
+                    <a href="mailto:hello@climoramatch.com" class="contact-quick-link" data-email-href>
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                        <span>
+                            <small>Email</small>
+                            <strong data-email>hello@climoramatch.com</strong>
+                        </span>
+                    </a>
+                </div>
+            </div>
 
-                                <label class="form-field">
-                                    <span>ZIP code</span>
-                                    <input type="text" name="zip" placeholder="78701" inputmode="numeric"
-                                        autocomplete="postal-code">
-                                </label>
-                            </div>
+            <div class="contact-form-card contact-form-compact" data-aos="fade-left">
+                <div class="contact-form-head">
+                    <span class="form-card-label">Matching request</span>
+                    <h3>Few details only</h3>
+                    <p>Keep it short. Provider details can be compared later.</p>
+                </div>
 
-                            <label class="form-field">
-                                <span>Service type</span>
-                                <select name="service">
-                                    <option value="">Select service type</option>
-                                    <option value="HVAC Installation">HVAC Installation</option>
-                                    <option value="HVAC Repair">HVAC Repair</option>
-                                    <option value="AC Services">AC Services</option>
-                                    <option value="Heating Services">Heating Services</option>
-                                    <option value="Not sure yet">Not sure yet</option>
-                                </select>
-                            </label>
+                <form class="contact-form" data-contact-form>
+                    <label class="form-field">
+                        <span>Full name</span>
+                        <input type="text" name="name" placeholder="Your name" autocomplete="name">
+                    </label>
 
-                            <label class="form-field">
-                                <span>Project details</span>
-                                <textarea name="message"
-                                    placeholder="Tell us about the heating, cooling, airflow, system, or timing concern."></textarea>
-                            </label>
+                    <label class="form-field">
+                        <span>Email address</span>
+                        <input type="email" name="email" placeholder="you@example.com" autocomplete="email">
+                    </label>
 
-                            <label class="form-check">
-                                <input type="checkbox" name="consent">
-                                <span class="form-check-custom" aria-hidden="true"></span>
-                                <span>
-                                    I understand Climora is a matching platform and does not perform HVAC services
-                                    directly.
-                                </span>
-                            </label>
+                    <div class="form-grid form-grid-compact">
+                        <label class="form-field">
+                            <span>ZIP code</span>
+                            <input type="text" name="zip" placeholder="78701" inputmode="numeric"
+                                autocomplete="postal-code">
+                        </label>
 
-                            <button type="submit" class="btn btn-primary btn-full">
-                                Submit Matching Request
-                                <i data-lucide="arrow-right" aria-hidden="true"></i>
-                            </button>
-
-                            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-                        </form>
+                        <label class="form-field">
+                            <span>Service</span>
+                            <select name="service">
+                                <option value="">Select</option>
+                                <option value="HVAC Installation">Installation</option>
+                                <option value="HVAC Repair">Repair</option>
+                                <option value="AC Services">AC</option>
+                                <option value="Heating Services">Heating</option>
+                                <option value="Not sure yet">Not sure</option>
+                            </select>
+                        </label>
                     </div>
 
-                    <aside class="contact-side" data-aos="fade-left">
-                        <div class="contact-map-card">
-                            <div class="map-visual" aria-label="Stylized USA service area map">
-                                <div class="map-grid" aria-hidden="true"></div>
+                    <label class="form-field">
+                        <span>Short note</span>
+                        <textarea name="message"
+                            placeholder="Briefly describe the heating, cooling, airflow, or timing concern."></textarea>
+                    </label>
 
-                                <div class="map-pin map-pin-main">
-                                    <span></span>
-                                </div>
+                    <label class="form-check">
+                        <input type="checkbox" name="consent">
+                        <span class="form-check-custom" aria-hidden="true"></span>
+                        <span>I understand Climora is a matching platform and does not perform HVAC services
+                            directly.</span>
+                    </label>
 
-                                <div class="map-pin map-pin-soft map-pin-one">
-                                    <span></span>
-                                </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Submit Request
+                        <i data-lucide="arrow-right" aria-hidden="true"></i>
+                    </button>
 
-                                <div class="map-pin map-pin-soft map-pin-two">
-                                    <span></span>
-                                </div>
-
-                                <div class="map-route" aria-hidden="true"></div>
-                            </div>
-
-                            <div class="map-content">
-                                <p class="section-kicker">
-                                    <i data-lucide="map-pin" aria-hidden="true"></i>
-                                    USA-based request coverage
-                                </p>
-
-                                <h2>Provider availability may vary by area.</h2>
-
-                                <p>
-                                    Climora supports HVAC matching requests across the United States. Independent
-                                    provider availability may vary by ZIP code, season, service category, and schedule.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="contact-info-stack">
-                            <a href="tel:+18886243178" class="contact-info-card" data-phone-href>
-                                <i data-lucide="phone" aria-hidden="true"></i>
-                                <span>
-                                    <small>Phone</small>
-                                    <strong data-phone>+1 888 624 3178</strong>
-                                </span>
-                            </a>
-
-                            <a href="mailto:hello@climoramatch.com" class="contact-info-card" data-email-href>
-                                <i data-lucide="mail" aria-hidden="true"></i>
-                                <span>
-                                    <small>Email</small>
-                                    <strong data-email>hello@climoramatch.com</strong>
-                                </span>
-                            </a>
-
-                            <div class="contact-info-card">
-                                <i data-lucide="building-2" aria-hidden="true"></i>
-                                <span>
-                                    <small>Reference office</small>
-                                    <strong data-address>515 Congress Avenue, Austin, TX 78701, USA</strong>
-                                </span>
-                            </div>
-                        </div>
-                    </aside>
-                </div>
+                    <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+                </form>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <!-- =========================
-             REQUEST CHECKLIST
-             ========================= -->
-        <section class="section contact-checklist-section">
-            <div class="container">
-                <div class="section-heading text-center" data-aos="fade-up">
-                    <p class="section-kicker section-kicker-center">
-                        <i data-lucide="list-checks" aria-hidden="true"></i>
-                        Before comparing providers
-                    </p>
+<!-- =========================
+     REQUEST CHECKLIST
+     ========================= -->
+<section class="section contact-checklist-section">
+    <div class="container-wide">
+        <div class="contact-checklist-panel">
+            <div class="contact-checklist-head" data-aos="fade-right">
+                <p class="section-kicker">
+                    <i data-lucide="list-checks" aria-hidden="true"></i>
+                    Before comparing providers
+                </p>
 
-                    <h2>Useful details can make your HVAC request clearer.</h2>
+                <h2>Prepare a clearer HVAC request in a few simple points.</h2>
 
-                    <p>
-                        You do not need to diagnose the issue yourself. Basic context helps shape the request before
-                        independent providers communicate their own availability and terms.
-                    </p>
-                </div>
+                <p>
+                    You do not need to diagnose the issue. A few practical details can help homeowners compare
+                    independent provider options with more clarity.
+                </p>
+            </div>
 
-                <div class="contact-checklist-grid">
-                    <article data-aos="fade-up">
-                        <i data-lucide="thermometer" aria-hidden="true"></i>
+            <div class="contact-checklist-list" data-aos="fade-left">
+                <article>
+                    <span>01</span>
+                    <div>
                         <h3>Comfort symptoms</h3>
-                        <p>Uneven rooms, weak airflow, short cycling, no heat, warm AC air, or unusual sounds.</p>
-                    </article>
+                        <p>Uneven rooms, weak airflow, no heat, warm AC air, short cycling, or unusual sounds.</p>
+                    </div>
+                    <i data-lucide="thermometer" aria-hidden="true"></i>
+                </article>
 
-                    <article data-aos="fade-up" data-aos-delay="80">
-                        <i data-lucide="home" aria-hidden="true"></i>
+                <article>
+                    <span>02</span>
+                    <div>
                         <h3>Property context</h3>
-                        <p>Home type, approximate size, system location, and known equipment age if available.</p>
-                    </article>
+                        <p>Home type, approximate size, system location, and equipment age if available.</p>
+                    </div>
+                    <i data-lucide="home" aria-hidden="true"></i>
+                </article>
 
-                    <article data-aos="fade-up" data-aos-delay="160">
-                        <i data-lucide="calendar-clock" aria-hidden="true"></i>
+                <article>
+                    <span>03</span>
+                    <div>
                         <h3>Timing needs</h3>
                         <p>Immediate concern, seasonal service, replacement planning, or flexible scheduling.</p>
-                    </article>
+                    </div>
+                    <i data-lucide="calendar-clock" aria-hidden="true"></i>
+                </article>
 
-                    <article data-aos="fade-up" data-aos-delay="240">
-                        <i data-lucide="file-check-2" aria-hidden="true"></i>
+                <article>
+                    <span>04</span>
+                    <div>
                         <h3>Verification steps</h3>
-                        <p>Confirm license, insurance, qualifications, quote terms, and written project scope.</p>
-                    </article>
-                </div>
+                        <p>Confirm license, insurance, qualifications, written quote terms, and project scope.</p>
+                    </div>
+                    <i data-lucide="file-check-2" aria-hidden="true"></i>
+                </article>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <!-- =========================
              SAFE NOTICE
