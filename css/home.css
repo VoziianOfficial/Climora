@@ -26,12 +26,12 @@
     content: "";
     background:
         linear-gradient(90deg,
-            rgba(244, 241, 236, 0.90) 0%,
-            rgba(244, 241, 236, 0.70) 42%,
-            rgba(244, 241, 236, 0.28) 100%),
+            rgba(244, 241, 236, 0.84) 0%,
+            rgba(244, 241, 236, 0.58) 42%,
+            rgba(244, 241, 236, 0.16) 100%),
         linear-gradient(180deg,
-            rgba(244, 241, 236, 0.08),
-            rgba(244, 241, 236, 0.82) 96%);
+            rgba(244, 241, 236, 0.04),
+            rgba(244, 241, 236, 0.68) 96%);
 }
 
 .home-hero-bg img {
@@ -39,7 +39,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center right;
-    filter: brightness(1.08) saturate(1.04) contrast(1.02);
+    filter: brightness(1.18) saturate(1.12) contrast(1.04);
     transform: scale(1.03);
 }
 
