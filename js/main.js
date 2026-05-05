@@ -441,13 +441,40 @@ function initLibraries() {
         window.lucide.createIcons();
     }
 
-    if (window.AOS) {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const isTabletOrMobile = window.matchMedia("(max-width: 1120px)").matches;
+
+    document.querySelectorAll("[data-aos-delay]").forEach((element) => {
+        if (isTabletOrMobile) {
+            element.removeAttribute("data-aos-delay");
+            return;
+        }
+
+        const delay = Number(element.getAttribute("data-aos-delay") || 0);
+
+        if (delay > 90) {
+            element.setAttribute("data-aos-delay", "90");
+        }
+    });
+
+    if (window.AOS && !prefersReducedMotion) {
+        document.documentElement.classList.add("aos-ready");
+
         window.AOS.init({
-            duration: 720,
+            duration: 680,
             easing: "ease-out-cubic",
             once: true,
-            offset: 70
+            mirror: false,
+            offset: 45,
+            delay: 0,
+            anchorPlacement: "top-bottom"
         });
+
+        window.addEventListener("load", () => {
+            window.AOS.refreshHard();
+        });
+    } else {
+        document.documentElement.classList.add("aos-fallback");
     }
 }
 
