@@ -108,7 +108,7 @@
     </a>
 
     
-    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu inert>
         <div class="mobile-menu-backdrop" data-menu-close></div>
 
         <div class="mobile-menu-panel" role="dialog" aria-modal="true" aria-label="Mobile navigation">
@@ -199,15 +199,18 @@
                 <div class="home-hero-layout">
                     <div class="home-hero-content" data-aos="fade-up">
                         <p class="section-kicker">
-                            <i data-lucide="wind" aria-hidden="true"></i>
+                            <i data-lucide="shield-check" aria-hidden="true"></i>
                             Independent HVAC matching platform
                         </p>
 
-                        <h1>Find Independent HVAC Providers Near You</h1>
+                        <h1>
+                            Find Independent <span>HVAC Providers</span><br>
+                            Near You
+                        </h1>
 
                         <p>
-                            Climora helps homeowners request matching with independent heating and cooling providers
-                            based on project type, location, and availability.
+                            We connect you with trusted, independent HVAC professionals. Get matched, compare, and
+                            choose with confidence.
                         </p>
 
                         <div class="hero-actions">
@@ -218,72 +221,58 @@
 
                             <a href="services.html" class="btn btn-secondary">
                                 View HVAC Services
+                                <i data-lucide="chevron-right" aria-hidden="true"></i>
                             </a>
                         </div>
 
                         <div class="hero-safe-notes" aria-label="Platform notes">
                             <span>
-                                <i data-lucide="check" aria-hidden="true"></i>
-                                Independent provider options
+                                <i data-lucide="shield" aria-hidden="true"></i>
+                                Independent &amp; unbiased
                             </span>
 
                             <span>
-                                <i data-lucide="check" aria-hidden="true"></i>
-                                USA service area
+                                <i data-lucide="lock" aria-hidden="true"></i>
+                                Your data is secure
                             </span>
 
                             <span>
-                                <i data-lucide="check" aria-hidden="true"></i>
-                                License verification encouraged
+                                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                                No obligation to hire
                             </span>
                         </div>
                     </div>
 
-                    <aside class="hero-request-card" aria-label="Quick HVAC matching request" data-aos="fade-left">
-                        <div class="hero-request-card-top">
-                            <span>
-                                <i data-lucide="thermometer-sun" aria-hidden="true"></i>
+                    <aside class="hero-visual-stack" aria-label="HVAC matching highlights" data-aos="fade-left">
+                        <article class="hero-visual-card">
+                            <span class="hero-visual-icon">
+                                <i data-lucide="users" aria-hidden="true"></i>
                             </span>
-
                             <div>
-                                <p>Request clarity</p>
-                                <strong>Start with the comfort issue</strong>
+                                <p>Matched for the Right Fit</p>
+                                <strong>Tell us what you need. We match you with best-fit providers.</strong>
                             </div>
-                        </div>
+                        </article>
 
-                        <form class="mini-request-form" data-mini-form>
-                            <div class="form-grid">
-                                <label class="form-field">
-                                    <span>ZIP code</span>
-                                    <input type="text" name="zip" inputmode="numeric" placeholder="78701"
-                                        aria-label="ZIP code">
-                                </label>
-
-                                <label class="form-field">
-                                    <span>Service type</span>
-                                    <select name="service" aria-label="Service type">
-                                        <option value="">Select one</option>
-                                        <option value="HVAC Installation">HVAC Installation</option>
-                                        <option value="HVAC Repair">HVAC Repair</option>
-                                        <option value="AC Services">AC Services</option>
-                                        <option value="Heating Services">Heating Services</option>
-                                        <option value="Not sure yet">Not sure yet</option>
-                                    </select>
-                                </label>
+                        <article class="hero-visual-card">
+                            <span class="hero-visual-icon">
+                                <i data-lucide="file-text" aria-hidden="true"></i>
+                            </span>
+                            <div>
+                                <p>Compare Provider Quotes</p>
+                                <strong>Review pricing, scope, and availability side-by-side.</strong>
                             </div>
+                        </article>
 
-                            <label class="form-check">
-                                <input type="checkbox" name="understanding">
-                                <span class="form-check-custom" aria-hidden="true"></span>
-                                <span>I understand Climora is a matching platform and does not perform HVAC services
-                                    directly.</span>
-                            </label>
-
-                            <button type="submit" class="btn btn-primary btn-full">
-                                Continue Request
-                                <i data-lucide="arrow-right" aria-hidden="true"></i>
-                            </button>
-                        </form>
+                        <article class="hero-visual-card">
+                            <span class="hero-visual-icon">
+                                <i data-lucide="badge-check" aria-hidden="true"></i>
+                            </span>
+                            <div>
+                                <p>Verified &amp; Licensed</p>
+                                <strong>Provider credentials and quality checks are encouraged.</strong>
+                            </div>
+                        </article>
                     </aside>
                 </div>
             </div>
@@ -293,27 +282,39 @@
             <div class="container-wide">
                 <div class="intro-strip-inner">
                     <article data-aos="fade-up">
-                        <i data-lucide="wind" aria-hidden="true"></i>
-                        <span>Comfort request</span>
-                        <strong>Describe the HVAC concern</strong>
+                        <span class="intro-strip-number">01</span>
+                        <strong>Comfort Request</strong>
+                        <p>Share your HVAC needs in just a few minutes.</p>
+                        <span class="intro-strip-icon">
+                            <i data-lucide="house" aria-hidden="true"></i>
+                        </span>
                     </article>
 
                     <article data-aos="fade-up" data-aos-delay="80">
-                        <i data-lucide="map-pin" aria-hidden="true"></i>
-                        <span>Local availability</span>
-                        <strong>Match by area and service type</strong>
+                        <span class="intro-strip-number">02</span>
+                        <strong>Local Availability</strong>
+                        <p>We find independent HVAC providers in your area.</p>
+                        <span class="intro-strip-icon">
+                            <i data-lucide="map-pin" aria-hidden="true"></i>
+                        </span>
                     </article>
 
                     <article data-aos="fade-up" data-aos-delay="160">
-                        <i data-lucide="clipboard-check" aria-hidden="true"></i>
-                        <span>Compare options</span>
-                        <strong>Review provider fit before choosing</strong>
+                        <span class="intro-strip-number">03</span>
+                        <strong>Compare Options</strong>
+                        <p>Review quotes, services, and availability side-by-side.</p>
+                        <span class="intro-strip-icon">
+                            <i data-lucide="chart-column" aria-hidden="true"></i>
+                        </span>
                     </article>
 
                     <article data-aos="fade-up" data-aos-delay="240">
-                        <i data-lucide="phone-call" aria-hidden="true"></i>
-                        <span>Simple follow-up</span>
-                        <strong>Continue with provider quotes</strong>
+                        <span class="intro-strip-number">04</span>
+                        <strong>Simple Follow-up</strong>
+                        <p>Connect, ask questions, and move forward with ease.</p>
+                        <span class="intro-strip-icon">
+                            <i data-lucide="message-circle" aria-hidden="true"></i>
+                        </span>
                     </article>
                 </div>
             </div>
@@ -671,21 +672,51 @@
                     <div>
                         <p class="section-kicker">
                             <i data-lucide="send" aria-hidden="true"></i>
-                            Begin comparison
+                            Request preparation
                         </p>
 
-                        <h2>Ready to compare HVAC provider options?</h2>
+                        <h2>Start a clearer HVAC matching request</h2>
 
                         <p>
-                            Share your location, service category, and project details to start a matching request.
-                            Climora does not perform HVAC work directly.
+                            Climora is a matching platform and does not perform HVAC services directly. Independent
+                            providers handle their own services. Homeowners should verify license, insurance, and quote
+                            details before hiring.
                         </p>
                     </div>
 
-                    <a href="contact.html" class="btn btn-primary">
-                        Start Matching Request
-                        <i data-lucide="arrow-right" aria-hidden="true"></i>
-                    </a>
+                    <form class="mini-request-form final-request-form" data-mini-form>
+                        <div class="form-grid">
+                            <label class="form-field">
+                                <span>ZIP code</span>
+                                <input type="text" name="zip" inputmode="numeric" placeholder="78701"
+                                    aria-label="ZIP code">
+                            </label>
+
+                            <label class="form-field">
+                                <span>Service type</span>
+                                <select name="service" aria-label="Service type">
+                                    <option value="">Select one</option>
+                                    <option value="HVAC Installation">HVAC Installation</option>
+                                    <option value="HVAC Repair">HVAC Repair</option>
+                                    <option value="AC Services">AC Services</option>
+                                    <option value="Heating Services">Heating Services</option>
+                                    <option value="Not sure yet">Not sure yet</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <label class="form-check">
+                            <input type="checkbox" name="understanding">
+                            <span class="form-check-custom" aria-hidden="true"></span>
+                            <span>I understand Climora is a matching platform and independent providers perform services
+                                directly.</span>
+                        </label>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Continue Request
+                            <i data-lucide="arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>

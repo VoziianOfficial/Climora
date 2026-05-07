@@ -317,15 +317,17 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: fit-content;
+    max-width: 100%;
     gap: 10px;
-    min-height: 48px;
-    padding: 13px 20px;
+    min-height: 52px;
+    padding: 13px 22px;
     border: 1px solid transparent;
     border-radius: var(--radius-pill);
     font-size: 0.92rem;
     font-weight: 850;
     line-height: 1;
-    white-space: nowrap;
+    white-space: normal;
     transition:
         transform var(--transition-base),
         box-shadow var(--transition-base),
@@ -730,6 +732,7 @@ p {
     position: fixed;
     inset: 0;
     z-index: 900;
+    overflow: hidden;
     opacity: 0;
     pointer-events: none;
     transition: opacity var(--transition-base);
@@ -744,14 +747,19 @@ p {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(circle at 20% 12%, rgba(208, 138, 50, 0.14), transparent 28%),
-        rgba(20, 21, 23, 0.46);
-    backdrop-filter: blur(10px);
+        radial-gradient(circle at 24% 10%, rgba(208, 138, 50, 0.12), transparent 34%),
+        rgba(20, 21, 23, 0.38);
+    backdrop-filter: blur(8px);
 }
 
 .mobile-menu-panel {
     position: absolute;
-    inset: 12px;
+    top: 12px;
+    right: 12px;
+    bottom: 12px;
+    left: auto;
+    width: min(420px, calc(100vw - 24px));
+    height: calc(100dvh - 24px);
     display: grid;
     grid-template-rows: auto 1fr;
     overflow: hidden;
@@ -761,12 +769,13 @@ p {
         radial-gradient(circle at 100% 0%, rgba(241, 222, 195, 0.72), transparent 32%),
         var(--color-bg);
     box-shadow: 0 30px 90px rgba(20, 21, 23, 0.26);
-    transform: translateY(16px) scale(0.985);
+    transform: translateX(110%) scale(0.98);
+    transform-origin: right center;
     transition: transform var(--transition-base);
 }
 
 .mobile-menu.is-open .mobile-menu-panel {
-    transform: translateY(0) scale(1);
+    transform: translateX(0) scale(1);
 }
 
 .mobile-menu-head {
@@ -1484,8 +1493,12 @@ p {
     }
 
     .mobile-menu-panel {
-        inset: 8px;
-        border-radius: 23px;
+        top: 8px;
+        right: 8px;
+        bottom: 8px;
+        width: calc(100vw - 16px);
+        height: calc(100dvh - 16px);
+        border-radius: 22px;
     }
 
     .mobile-menu-head,
@@ -1500,13 +1513,25 @@ p {
     }
 
     .btn {
-        width: 100%;
+        width: auto;
+        max-width: 100%;
         white-space: normal;
         text-align: center;
     }
 
     .policy-actions {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-menu-panel {
+        top: 8px;
+        right: 8px;
+        bottom: 8px;
+        width: calc(100vw - 16px);
+        height: calc(100dvh - 16px);
+        border-radius: 22px;
     }
 }
 

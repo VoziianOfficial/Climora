@@ -188,12 +188,16 @@ function initMobileMenu() {
     const toggle = document.querySelector("[data-menu-toggle]");
     const closeButtons = document.querySelectorAll("[data-menu-close]");
     const menuLinks = document.querySelectorAll(".mobile-menu a");
+    const menuPanel = menu?.querySelector(".mobile-menu-panel");
 
     if (!menu || !toggle) return;
+
+    menu.inert = true;
 
     const openMenu = () => {
         menu.classList.add("is-open");
         menu.setAttribute("aria-hidden", "false");
+        menu.inert = false;
         toggle.setAttribute("aria-expanded", "true");
         document.body.classList.add("menu-open");
 
@@ -205,10 +209,25 @@ function initMobileMenu() {
     };
 
     const closeMenu = () => {
+        if (menu.contains(document.activeElement)) {
+            toggle.focus();
+        }
+
         menu.classList.remove("is-open");
-        menu.setAttribute("aria-hidden", "true");
         toggle.setAttribute("aria-expanded", "false");
         document.body.classList.remove("menu-open");
+
+        const finalizeClose = () => {
+            menu.setAttribute("aria-hidden", "true");
+            menu.inert = true;
+        };
+
+        if (menuPanel) {
+            menuPanel.addEventListener("transitionend", finalizeClose, { once: true });
+            window.setTimeout(finalizeClose, 320);
+        } else {
+            finalizeClose();
+        }
     };
 
     toggle.addEventListener("click", () => {
@@ -232,7 +251,6 @@ function initMobileMenu() {
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape" && menu.classList.contains("is-open")) {
             closeMenu();
-            toggle.focus();
         }
     });
 
